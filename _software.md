@@ -58,9 +58,9 @@ Specific topic on Software Reverse Engineering
 * [iOS Reverse Engineering](https://github.com/iosre/iOSAppReverseEngineering)
 
 ## White Papers
-* [Next Generation debugger for reverse engineering] (https://www.blackhat.com/presentations/bh-europe-07/ERSI/Whitepaper/bh-eu-07-ersi-WP-apr19.pdf)
-* [Behind Enemy Lines Reverse Engineering C++ in Modern Ages] (https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
-* [https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
+* [Next Generation debugger for reverse engineering](https://www.blackhat.com/presentations/bh-europe-07/ERSI/Whitepaper/bh-eu-07-ersi-WP-apr19.pdf)
+* [Behind Enemy Lines Reverse Engineering C++ in Modern Ages](https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
+* [Overcoming Java Vulnerabilities](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
 
 ## Courses
 
