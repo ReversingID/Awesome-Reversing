@@ -13,6 +13,8 @@ Managed by Reversing.ID for the reversing community.
     - [Structure Parser](#structure-parser)
     - [Binary Visualization](#binary-visualization)
     - [String Search](#string-search)
+    - [Pattern Search](#pattern-search)
+    - [Bundle Extractor](#bundle-extractor)
 
 - - - 
 
@@ -55,3 +57,14 @@ Mac OS X
 
 - [bingrep](https://github.com/m4b/bingrep) - grep through binaries
 
+## Pattern Search
+
+- [YARA](https://github.com/virustotal/yara)
+
+## Bundle Extractor
+
+Game Assets
+
+* [UABE](https://github.com/DerPopo/UABE) - Unity Assets Bundle Extractor
+* [DevXUnityUnpacker](http://devxdevelopment.com/UnityUnpacker)
+* [MultiEx Commander](http://multiex.xentax.com/) - multiple game resources archive.
