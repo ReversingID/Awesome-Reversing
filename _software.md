@@ -14,6 +14,7 @@ Managed by Reversing.ID for the reversing community.
     - [References](#references)
 - Tools
     - [Hex Editors](#hex-editors)
+    - [Bytecode Editor](#bytecode-editors)
     - [Binary Format](#binary-format)
     - [Disassemblers](#disassemblers)
     - [Debuggers](#debuggers)
@@ -23,7 +24,7 @@ Managed by Reversing.ID for the reversing community.
     - [Code Emulators](#code-emulators)
     - [Injector](#injectors)
     - [HTTP Intercept Proxy](#http-intercept-proxy)
-    - [Import Reconstructors](#import-reconstructors)
+    - [Reconstructors](#reconstructors)
     - [Scripting](#scripting)
     - [Unpackers](#unpackers)
     - [Obfuscators](#obfuscators)
@@ -180,6 +181,13 @@ Format parser
 
 * [LIEF](https://lief.quarkslab.com/)
 
+## Bytecode Editors
+
+Java bytecode editor
+
+* [Recaf](https://github.com/Col-E/Recaf)
+* [JByteMode](https://github.com/GraxCode/JByteMod-Beta)
+
 ## Disassemblers & Decompilers
 
 Native code disassembler and decompiler
@@ -272,6 +280,11 @@ OllyDbg variant
 * [Olly CiMs](https://tuts4you.com/download.php?view.1206)
 * [Olly UST_2bg](https://tuts4you.com/download.php?view.1206)
 
+Graphic Debugger
+
+* [RenderDoc](https://renderdoc.org/)
+* [PIX](https://blogs.msdn.microsoft.com/pix/download/)
+
 ## Behavioral Analysis
 
 Network simulation
@@ -297,6 +310,7 @@ Tracer
 * [SpyStudio](https://www.nektra.com/products/spystudio-api-monitor/)
 * [fibratus](https://github.com/rabbitstack/fibratus) - explore and trace windows kernel
 * [TCPView](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview)
+* [CDA: Code Dynamic Analysis](http://split-code.com/cda.html)
 
 Sandbox
 
@@ -358,17 +372,26 @@ Windows
 * [PolyHook](https://github.com/stevemk14ebr/PolyHook)
 * [EasyHook](https://easyhook.github.io/)
 * [Deviare2](https://github.com/nektra/Deviare2)
+* [Xenos](https://github.com/DarthTon/Xenos)
 
 ## HTTP Intercept Proxy
 
 * [Fiddler](https://www.telerik.com/fiddler)
 * [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 
-## Import Reconstructors
+## Reconstructors
+
+Import reconstructor
 
 * [ImpRec](http://www.woodmann.com/collaborative/tools/index.php/ImpREC)
 * [Scylla](https://github.com/NtQuery/Scylla)
 * [LordPE](http://www.woodmann.com/collaborative/tools/images/Bin_LordPE_2010-6-29_3.9_LordPE_1.41_Deluxe_b.zip)
+
+Data-type reconstructor
+
+* [ReClassEx](https://github.com/dude719/ReClassEx)
+* [ReClass.NET](https://github.com/KN4CK3R/ReClass.NET) - port of ReClass to .NET
+
 
 ## Scripting
 
