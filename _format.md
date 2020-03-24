@@ -4,6 +4,12 @@ A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
+## Introduction
+
+`Data Format Reverse Engineering` focus on representation and interpretation of structured data in stored or transmitted form.
+
+In some cases, format reversing is done in conjunction with software which generate the data.
+
 ## Table of Contents
 
 - Resources

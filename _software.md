@@ -4,6 +4,19 @@ A curated list of awesome reverse engineering resources to make you better!
 
 Managed by Reversing.ID for the reversing community.
 
+## Introduction 
+
+`Software Reverse Engineering` focus on code, related data, and architecture which build a complete software.
+
+The goals:
+
+- Recover lost information, or to make documentation.
+- Detect side effects (bugs, backdoor, vulnerabilities)
+- Synthesis higher abstraction.
+- Facilitate reuse.
+
+In most case, the target of Software Reversing is code in compiled form (native or intermediate), either executable or libraries.
+
 ## Table of Contents
 
 - Resources
