@@ -21,21 +21,22 @@ In most case, the target of Software Reversing is code in compiled form (native 
 
 - Resources
     - [Books](#books)
+    - [White Papers](#hite-papers)
     - [Courses](#courses)
     - [Channels](#channels)
     - [Practices](#practices)
     - [References](#references)
 - Tools
     - [Hex Editors](#hex-editors)
-    - [Bytecode Editor](#bytecode-editors)
     - [Binary Format](#binary-format)
-    - [Disassemblers](#disassemblers)
+    - [Bytecode Editor](#bytecode-editors)
+    - [Disassemblers & Decompilers](#disassemblers--decompilers)
     - [Debuggers](#debuggers)
     - [Behavior Analysis](#behavior-analysis)
     - [Dynamic Binary Instrumentation](#dynamic-binary-instrumentation)
     - [Binary Analysis Framework](#binary-analysis-framework)
     - [Code Emulators](#code-emulators)
-    - [Injector](#injectors)
+    - [Injectors](#injectors)
     - [HTTP Intercept Proxy](#http-intercept-proxy)
     - [Reconstructors](#reconstructors)
     - [Scripting](#scripting)
@@ -72,6 +73,7 @@ Specific topic on Software Reverse Engineering
 * [iOS Reverse Engineering](https://github.com/iosre/iOSAppReverseEngineering)
 
 ## White Papers
+
 * [Next Generation debugger for reverse engineering](https://www.blackhat.com/presentations/bh-europe-07/ERSI/Whitepaper/bh-eu-07-ersi-WP-apr19.pdf)
 * [Behind Enemy Lines Reverse Engineering C++ in Modern Ages](https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
 * [Overcoming Java Vulnerabilities](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
@@ -208,6 +210,7 @@ Native code disassembler and decompiler
 * [Ghidra](https://ghidra-sre.org/)
 * [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
 * [Binary Ninja](https://binary.ninja/)
+* [Relyze Desktop](https://relyze.com)
 * [Radare2](http://www.radare.org/r/) // [Cutter](https://cutter.re)
 * [Hopper](http://hopperapp.com/)
 * [Capstone](http://www.capstone-engine.org/)
@@ -298,7 +301,7 @@ Graphic Debugger
 * [RenderDoc](https://renderdoc.org/)
 * [PIX](https://blogs.msdn.microsoft.com/pix/download/)
 
-## Behavioral Analysis
+## Behavior Analysis
 
 Network simulation
 
@@ -378,7 +381,7 @@ Theorem prover and solver
 * [libemu](http://libemu.carnivore.it)
 * [pegasus](https://github.com/imugee/pegasus)
 
-## Injector
+## Injectors
 
 Windows
 
@@ -423,7 +426,7 @@ Data-type reconstructor
 * [FUU](https://github.com/crackinglandia/fuu) - [F]aster [U]niversal [U]npacker
 * [TitanEngine](http://www.reversinglabs.com/products/TitanEngine.php)
 
-## Obfuscator
+## Obfuscators
 
 Native
 
