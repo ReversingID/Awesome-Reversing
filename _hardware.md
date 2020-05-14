@@ -31,16 +31,19 @@ Some notable process:
     - [Protocol List](#protocol-list)
 - Hadware Tools
     - [Bus Interface](#bus-interface)
-    - [Logic Analyzer](#logic-analyzer)
-    - [Osciloscope](#osciloscope)
-    - [Dev Board](#dev-board)
+    - [Programmers & Flashers](#programmers--flashers)
+    - [Hardware Debuggers](#hardware-debuggers)
+    - [Protocol Analyzers](#protocol-analyzers)
+    - [Logic Analyzers](#logic-analyzers)
+    - [Osciloscopes](#osciloscopes)
+    - [Dev & Breakout Boards](#dev--breakout-boards)
     - [Radio Frequency](#radio-frequency)
     - [Magnetic Strip](#magnetic-strip)
 - Software Tools
     - [EDA](#eda)
     - [Firmware Extract](#firmware-extract)
-    - [Disassemblers](#disassemblers)
-    - [Debuggers](#debuggers)
+    - [Disassemblers & Decompilers](#disassemblers--decompilers)
+    - [Software Debuggers](#software-debuggers)
 
 - - - 
 
@@ -72,7 +75,7 @@ Radio Frequency
 
 Learning Assembly
 
-* [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference) - coming soon
+* [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference)
 
 Development Boards
 
@@ -90,44 +93,91 @@ Single-Board Computer (family)
 * [Pine64](https://www.pine64.org/)
 * [ODROID](https://www.hardkernel.com)
 
-Interface protocols
+## Protocol List
 
-* SPI
-* I2C
-* JTAG
-* SWD
+Inter-circuitry protocol (Internal)
+
+This protocol used for communication between circuit or modules, such as EEPROM, RAM, RTC, sensors, etc.
+
+* SPI: *Serial Peripheral Interface*, synchronous protocol with master-slave design.
+* I2C: *Inter-Integrated Circuit*, synchronous protocol with multi-master and multi-slave support.
+
+System communication (External)
+
+* CAN: *Controller Area Network*, device communication popular in vehicle.
+* USB: *Universal Serial Bus*
+* UART & USART: *Universal Synchronous Asynchronous Receiver-Transmitter*
+* RS232
+
+Debugging protocol
+
+* JTAG: *Joint-Test Action Group*
+* SWD: *Serial-Wire Debug*, ARM specific protocol
 
 - - - 
 
 ## Bus Interface
 
-Multi-interface
-
 * [Shikra](https://int3.cc/products/the-shikra) - JTAG, SPI, I2C, UART, GPIO
 * [Hydrabus](https://hydrabus.com/) - UART, I2C, USB, smartcard, 2-wire, wiegand, SPI, CAN, SDIO, DAC, 1-wire
+* [Xpliot Nano](https://expliot.io/products/expliot-nano)
 * [Bus Pirate](http://dangerousprototypes.com/docs/Features_overview) - 1-wire, I2C, SPI, JTAG, UART
 * USB to TTL/UART
-
-Programmer
-
-* [Xpliot Nano](https://expliot.io/products/expliot-nano)
-* STM32 programmer - enter DFU (Device Firmware Upgrade) mode for programming and debugging
-* AVR programmer
-
-JTAG
-
-* [JTAGulator](https://github.com/grandideastudio/jtagulator)
-
-CAN
-
-* [CANtact](https://linklayer.github.io/cantact/) - CAN (Controller Area Network) to USB interface
 
 OBD adapter
 
 * [ObdDiag](http://www.obddiag.net/) - open source ELM327 OBD adapter, connect to On-Board Diagnostic (OBD) port for connecting to car's self-diagnostic system.
 * [M2](https://www.macchina.cc/m2-introduction) - 
 
-## Logic Analyzer
+## Programmers & Flashers
+
+*read/write device which contain memory*
+
+Universal
+
+* [EE Tools](https://eetools.com/product-category/programmers/)
+
+Microcontroller/Microprocessor Specific
+
+* STM32 programmer - enter DFU (Device Firmware Upgrade) mode for programming and debugging
+* AVR programmer
+
+## Hardware Debuggers
+
+SWD (Serial Wire Debugger), ARM specific
+
+* [ST-Link](https://www.st.com/en/development-tools/st-link-v2.html)
+
+JTAG (Joint-Test Action Group)
+
+* [JTAGulator](https://github.com/grandideastudio/jtagulator) - scan and identify JTAG pin
+* [JTAGEnum](https://github.com/cyphunk/JTAGenum) - using arduino to identify JTAG pin
+* [RIFF Box](http://www.riffbox.org/)
+* [Bus Blaster](http://dangerousprototypes.com/docs/Bus_Blaster) - JTAG debugger
+* [Segger J-Link](https://www.segger.com/products/debug-probes/j-link/)
+* Shikra
+* ST-Link
+
+## Protocol Analyzers
+
+*real-time, non-intrusive monitoring/capture/decoding of wired communication*
+
+Multi
+
+* [TotalPhase Beagle](https://www.totalphase.com/products/beagle-i2cspi/) - USB/I2C/SPI
+
+USB 
+
+* Teledyn [LeCroy Voyager](https://teledynelecroy.com/protocolanalyzer/usb) series
+* [OpenVizsla](http://openvizsla.org/)
+* [Daisho](https://greatscottgadgets.com/daisho/)
+
+CAN
+
+* [CANtact](https://linklayer.github.io/cantact/) - CAN (Controller Area Network) to USB interface
+* [TotalPhase Komodo](https://www.totalphase.com/products/komodo-canduo/) - CAN
+
+## Logic Analyzers
 
 *concurrently capturing, visualizing, and decoding large quantities of digital data*
 
@@ -136,7 +186,7 @@ OBD adapter
 * USB Logic Analyzer
 * [BeagleBone as Logic Analyzer](https://github.com/abhishek-kakkar/BeagleLogic)
 
-## Osciloscope
+## Osciloscopes
 
 *visual display of electrical signals and how they change over time*
 
@@ -154,7 +204,7 @@ PC_based
 * USBee
 * PicoScope
 
-## Dev Board & Breakout Board
+## Dev & Breakout Boards
 
 * [GoodFET](http://goodfet.sourceforge.net/)
 * [GreatFET One](https://greatscottgadgets.com/greatfet/one/)
@@ -213,11 +263,12 @@ Multi-architecture
 * [Radare2](http://www.radare.org/r/) // [Cutter](https://cutter.re)
 * [objdump](http://linux.die.net/man/1/objdump)
 
-## Debuggers
+## Software Debuggers
 
 Hardware debugger
 
-* [OpenOCD](http://openocd.org/) - On-Chip Debugger
+* [OpenOCD](http://openocd.org/) - Open On-Chip Debugger, give GDB support.
+* [UrJTAG](http://www.urjtag.org) - Universal JTAG Library
 
 Signal Analysis
 
