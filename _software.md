@@ -192,9 +192,10 @@ Dependency check
 * [DependencyWalker](http://www.dependencywalker.com/)
 * [slid](https://github.com/arvinddoraiswamy/slid) - statically linked library detector.
 
-Format parser
+Format parser and modification
 
 * [LIEF](https://lief.quarkslab.com/)
+* [QuickBMS](http://aluigi.altervista.org/quickbms.htm) - easily extract and modify file format with support of encryption, compressions, obfuscation, and other algorithms.
 
 ## Bytecode Editors
 
