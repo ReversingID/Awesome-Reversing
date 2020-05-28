@@ -66,6 +66,16 @@ Hardware hacking
 * [Hardware Hacking Projects for Geeks](https://amzn.com/0596003145) 
 * [Game Console Hacking: Xbox, PlayStation, Nintendo, Game Boy, Atari and Sega](https://amzn.com/B001V7U7AE)
 
+PCB (Printed Circuit Boards)
+
+* [The Art of PCB Reverse Engineering: Unravelling the Beauty of the Original Design](https://amzn.com/1499323441)
+* [PCB-RE: Real-World Examples](https://amzn.com/B087V4GJ94)
+
+BIOS, UEFI, Firmware
+
+* [BIOS Disassembly Ninjutsu Uncovered](https://amzn.com/1931769605)
+* [Beyond BIOS: Developing with the Unified Extensible Firmware Interface](https://amzn.com/1501514784)
+
 ## Courses
 
 Electronic
