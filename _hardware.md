@@ -259,8 +259,13 @@ EDA (Electronic Design Automation) and ECAD (Electronic Computer-Aided Design)
 
 * [Eagle](https://www.autodesk.com/products/eagle/overview)
 * [KiCad](https://www.kicad-pcb.org/)
-* [Altium](https://www.altium.com/)
+* [Altium](https://www.altium.com/) and free [Altium CircuitMaker](https://circuitmaker.com/)
 * [Pulsonix](https://www.pulsonix.com/)
+* [DesignSpark PCB](https://www.rs-online.com/designspark/pcb-software)
+* [gEDA](http://geda-project.org/)
+* [DipTrace](https://diptrace.com/)
+* [LibrePCB](https://librepcb.org/)
+* [Horizon EDA](https://github.com/horizon-eda/horizon)
 
 ## Firmware Extract
 
