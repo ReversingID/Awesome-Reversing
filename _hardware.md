@@ -81,6 +81,13 @@ Radio Frequency
 
 ## Channels
 
+YouTube Channel
+
+* [Micah Scott](https://www.youtube.com/user/micahjd) - video logs of Reverse Engineering and repurposing consumer electronics hardware in creative ways.
+* [The Signal Path](https://www.youtube.com/user/TheSignalPathBlog) - collections of teardown, repairs, and reviews of lab equipment and prototyping products.
+* [GreatScott](https://www.youtube.com/user/greatscottlab)
+* [EEVblog](https://www.youtube.com/user/EEVblog)
+
 ## References
 
 Learning Assembly
