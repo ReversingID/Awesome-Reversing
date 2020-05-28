@@ -28,6 +28,7 @@ Some notable process:
     - [Courses](#courses)
     - [Channels](#channels)
     - [References](#references)
+    - [Communities](#communities)
     - [Protocol List](#protocol-list)
 - Hadware Tools
     - [Bus Interface](#bus-interface)
@@ -137,6 +138,14 @@ Debugging protocol
 
 * JTAG: *Joint-Test Action Group*
 * SWD: *Serial-Wire Debug*, ARM specific protocol
+
+## Communities
+
+* [Kitspace](https://kitspace.org)
+* [Hackaday.io](https://hackaday.io)
+* [Hackster.io](https://www.hackster.io/)
+* [Maker.pro](https://maker.pro)
+* [Maker.io](https://www.digikey.com/en/maker)
 
 - - - 
 
