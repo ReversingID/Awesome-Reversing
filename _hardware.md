@@ -103,6 +103,13 @@ Single-Board Computer (family)
 * [Pine64](https://www.pine64.org/)
 * [ODROID](https://www.hardkernel.com)
 
+Part Search Engine
+
+* [Octopart](https://octopart.com)
+* [Findchips](https://www.findchips.com/)
+* [Parts.io](https://parts.io/)
+* [AllDataSheet.io](https://www.alldatasheet.com/)
+
 ## Protocol List
 
 Inter-circuitry protocol (Internal)
