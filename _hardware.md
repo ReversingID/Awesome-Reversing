@@ -45,6 +45,7 @@ Some notable process:
     - [Firmware Extract](#firmware-extract)
     - [Disassemblers & Decompilers](#disassemblers--decompilers)
     - [Software Debuggers](#software-debuggers)
+    - [Traffic Analysis](#traffic-analysis)
 - Software Packages & Libraries
     - [RTOS](#rtos)
 
@@ -141,10 +142,18 @@ This protocol used for communication between circuit or modules, such as EEPROM,
 
 System communication (External)
 
-* CAN: *Controller Area Network*, device communication popular in vehicle.
-* USB: *Universal Serial Bus*
-* UART & USART: *Universal Synchronous Asynchronous Receiver-Transmitter*
-* RS232
+This protocol used for communication between modules or external system.
+
+* Wired protocol
+    - CAN: *Controller Area Network*, device communication popular in vehicle.
+    - USB: *Universal Serial Bus*
+    - UART & USART: *Universal Synchronous Asynchronous Receiver-Transmitter*
+    - RS232
+* Wireless protocol
+    - Bluetooth
+    - LoRaWAN
+    - WiFi
+    - ZigBee
 
 Debugging protocol
 
@@ -168,6 +177,7 @@ Debugging protocol
 * [Xpliot Nano](https://expliot.io/products/expliot-nano)
 * [Bus Pirate](http://dangerousprototypes.com/docs/Features_overview) - 1-wire, I2C, SPI, JTAG, UART
 * USB to TTL/UART
+* [USBtin](https://www.fischl.de/usbtin/) - USB to CAN interface.
 
 OBD adapter
 
@@ -264,6 +274,7 @@ General-purpose
 * [LimeSDR](https://www.crowdsupply.com/lime-micro/limesdr) - full duplex, 
 * [RTL-SDR](https://www.rtl-sdr.com/) - RX, 500 kHz - 1766 MHz
 * [YARD Stick](https://greatscottgadgets.com/yardstickone/) - half duplex, 300-348 MHz, 391-464 MHz, 782-928 MHz
+* [nRF52840 Dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle) - dongle which support Bluetooth 5, Bluetooth mesh, Thread, ZigBee, 802.15.4, ANT, and 2.4 GHz proprietary protocols.
 
 Zigbee
 
@@ -328,6 +339,28 @@ Signal Analysis
 Firmware debugger
 
 * [GDB](https://www.gnu.org/software/gdb/)
+
+## Traffic Analysis
+
+Communication Protocol
+
+* [I/O Ninja](https://ioninja.com/) - Professional, scriptable, multi-purpose terminal emulator, network sniffer, and IO monitor.
+* [Bettercap](https://github.com/bettercap/bettercap) - Swiss-army knife for 802.11, BLE, and ethernet network reconnaissance and MITM attacks.
+* CAN (Controller Area Network)
+    - [CANToolz](https://github.com/CANToolz/CANToolz) - Black-box CAN network analysis framework.
+* BLE (Bluetooth Low Energy)
+    - [btproxy](https://github.com/conorpp/btproxy) - MITM analysis tool for Bluetooth.
+    - [BtleJuice](https://github.com/DigitalSecurity/btlejuice) - BLE MITM framework.
+    - [btlejack](https://github.com/virtualabs/btlejack) - BLE swiss-army knife pair with BBC Micro:Bit device.
+    - Bluez - sdptool, l2ping
+* ZigBee
+    - [KillerBee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
+
+Radio Frequency
+
+* [Universal Radio Hacker](https://github.com/jopohl/urh) - Investigate Wireless Protocols
+* [Inspectrum](https://github.com/miek/inspectrum) - Offline radio signal analyser
+* [GNU Radio](https://gnuradio.org/) - Software development toolkit for signal processing block to implement Software-Defined Radio and Signal-processing system.
 
 - - - 
 
