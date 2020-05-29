@@ -44,6 +44,7 @@ Some notable process:
     - [EDA](#eda)
     - [Firmware Extract](#firmware-extract)
     - [Disassemblers & Decompilers](#disassemblers--decompilers)
+    - [Emulators](#emulators)
     - [Software Debuggers](#software-debuggers)
     - [Traffic Analysis](#traffic-analysis)
 - Software Packages & Libraries
@@ -323,6 +324,15 @@ Multi-architecture
 
 * [Radare2](http://www.radare.org/r/) // [Cutter](https://cutter.re)
 * [objdump](http://linux.die.net/man/1/objdump)
+
+## Emulators
+
+Full firmware emulator
+
+* [QEMU](https://www.qemu.org/) - Generic and open source machine emulator and virtualizer.
+    - [ARM-X](https://github.com/therealsaumil/armx) - Firmware emulation framework based on top of QEMU
+    - [Firmwadyne](https://github.com/firmadyne/firmadyne) - Platform for emulation and dynamic analysis of Linux-based firmware.
+* [Kopycat](https://github.com/inforion/kopycat/) - hardware emulator.
 
 ## Software Debuggers
 
