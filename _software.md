@@ -267,6 +267,11 @@ AutoIT decompiler
 * [myAut2Exe](https://github.com/dzzie/myaut_contrib) - scan and extract the AutoIT script.
 * [Exe2Aut](http://domoticx.com/autoit3-decompiler-exe2aut) - extract the AutoIT script by running it.
 
+Ethereum (EVM) Solidity disassembler / decompiler
+
+* [evmdis](https://github.com/Arachnid/evmdis) - EVM disassembler by static analysis on the bytecode.
+* [pyevmasm](https://github.com/crytic/pyevmasm) - assembler and disassembler library for EVM (Ethereum Virtual Machine).
+
 ## Debuggers
 
 Multi/cross platform
