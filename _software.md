@@ -250,7 +250,8 @@ Python decompiler
 
 Flash decompiler
 
-* [JPEXS Flash Decompiler](https://www.free-decompiler.com/flash/)
+* [JPEXS Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) - open source SWF decompiler and editor, convert SWF to FLA, edit ActionScript, replace resources (images, sounds, texts, fonts).
+* [Flare](http://www.nowrap.de/flare.html) - Extract all scripts from SWF.
 
 Delphi decompiler
 
