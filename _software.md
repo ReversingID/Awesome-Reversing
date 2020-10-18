@@ -370,9 +370,13 @@ Native
 * [miasm](https://miasm.re/) - analyze / modify / generate binary program with python.
 * [soot](https://github.com/soot-oss/soot) - java optimization framework
 
-Symbolic execution
+Symbolic Execution (only)
 
 * [KLEE](https://klee.github.io/) - dynamic symbolic execution engine built on top of the LLVM compiler infrastructure
+* [manticore](https://github.com/trailofbits/manticore/) - symbolic execution tool for analysis of smart contracts and binaries.
+* [Kite](http://www.cs.ubc.ca/labs/isd/Projects/Kite/) - conflict-driven symbolic execution tool (proof of concept)
+* [jCUTE](https://github.com/osl/jcute) - Java Concolic Unit Testing Engine, automatically generate unit tests for Java programs.
+* [ExpoSE](https://github.com/ExpoSEJS/ExpoSE) - dynamic symbolic execution engine for JavaScript.
 
 Binary lifting
 
