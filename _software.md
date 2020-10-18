@@ -249,6 +249,7 @@ Java decompiler
 Python decompiler
 
 * [uncompyle6](https://pypi.org/project/uncompyle6/)
+* [decompile3](https://github.com/rocky/python-decompile3) - reworking and refactoring of `uncompyle6` which focus on Python 3.7+
 
 Flash decompiler
 
