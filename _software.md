@@ -152,7 +152,6 @@ Hex editor lets you view/edit the binary data of a file.
 Multi/cross platform
 
 * [010 Editor](http://www.sweetscape.com/010editor/)
-* [Kaitai Struct](https://kaitai.io)
 * [wxHexEditor](https://www.wxhexeditor.org/)
 
 Windows 
@@ -194,7 +193,8 @@ Dependency check
 
 Format parser and modification
 
-* [LIEF](https://lief.quarkslab.com/)
+* [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach 
+* [LIEF](https://lief.quarkslab.com/) - Library to Instrument Executable Formats, easily parse, modify and abstract many file formats.
 * [QuickBMS](http://aluigi.altervista.org/quickbms.htm) - easily extract and modify file format with support of encryption, compressions, obfuscation, and other algorithms.
 
 ## Bytecode Editors
@@ -224,7 +224,7 @@ Native code disassembler and decompiler
 
 Android application disassembler / decoder
 
-* [JEB2](https://www.pnfsoftware.com/jeb2/)
+* [JEB2](https://www.pnfsoftware.com/jeb2/) - eclipse-based integrated reverse engineering platform for analyzing various parts of Android application components.
 
 Java decompiler
 
@@ -270,7 +270,7 @@ Windows
 
 Linux
 
-* [QIRA](http://qira.me/)
+* [QIRA](http://qira.me/) - timeless debugger which track all state while program is running.
 * [EDB](http://www.codef00.com/projects#debugger)
 
 Virtual Machine Introspection for debugging
@@ -344,34 +344,34 @@ Misc
 
 ## Dynamic Binary Instrumentation
 
-* [DynamoRIO](http://www.dynamorio.org)
-* [Frida](https://frida.re)
+* [DynamoRIO](http://www.dynamorio.org) - runtime code manipulation system that supports code transformation on any part of program.
+* [Frida](https://frida.re) - scriptable DBI toolkit for cross-platform target.
 * [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool)
-* [QDBI](https://qbdi.quarkslab.com/)
+* [QBDI](https://qbdi.quarkslab.com/) - modular, cross-platform, and cross-architecture DBI framework backed by LLVM.
 
 ## Binary Analysis Framework
 
-* [Angr](http://angr.io/)
-* [Triton](https://triton.quarkslab.com)
-* [BAP](http://binaryanalysisplatform.github.io/)
+* [Angr](http://angr.io/) - python framework for analyzing binaries, combines both static and dynamic symbolic (concolic) analysis.
+* [Triton](https://triton.quarkslab.com) - dynamic binary analysis (DBA) framework.
+* [BAP](http://binaryanalysisplatform.github.io/) - suite of utilities and libraries that enable analysis of programs in their machine representations.
 * [BitBlaze](http://bitblaze.cs.berkeley.edu/)
-* [PANDA](https://github.com/panda-re/panda)
+* [PANDA](https://github.com/panda-re/panda) - Platform for Architecture-Neutral Dynamic Analysis, built on QEMU system emulator, analyzecode in runtime.
 * [BARF](https://github.com/programa-stic/barf-project)
-* [S2E](https://s2e.systems/)
-* [miasm](https://miasm.re/)
-* [soot](https://github.com/Sable/soot) - Java optimization framework
+* [S2E](https://s2e.systems/) - platform for in-vivo analysis of software systems.
+* [miasm](https://miasm.re/) - analyze / modify / generate binary program with python.
+* [soot](https://github.com/Sable/soot) - java optimization framework
 
 Symbolic execution
 
-* [KLEE](https://klee.github.io/)
+* [KLEE](https://klee.github.io/) - dynamic symbolic execution engine built on top of the LLVM compiler infrastructure
 
 Binary lifting
 
-* [McSema](https://github.com/lifting-bits/mcsema)
+* [McSema](https://github.com/lifting-bits/mcsema) - framework for lifting x86, amd64, and aarch64 program binareis to LLVM bitcode.
 
 Theorem prover and solver
 
-* [Z3](https://github.com/Z3Prover/z3)
+* [Z3](https://github.com/Z3Prover/z3) - cross-platform satisfiability modulo theory 
 * [STP](https://stp.github.io/)
 * [CVC4](https://cvc4.github.io/)
 * [Boolector](https://boolector.github.io/)
@@ -409,7 +409,6 @@ Data-type reconstructor
 * [ReClassEx](https://github.com/dude719/ReClassEx)
 * [ReClass.NET](https://github.com/KN4CK3R/ReClass.NET) - port of ReClass to .NET
 
-
 ## Scripting
 
 * [IDA Python Src](https://github.com/idapython/src)
@@ -439,7 +438,7 @@ Native
 Native
 
 * [LLVM Deobfuscator](https://github.com/RPISEC/llvm-deobfuscator)
-* [SATURN]()
+* [SATURN]() - software deobfuscation framework based on LLVM.
 
 Java
 
