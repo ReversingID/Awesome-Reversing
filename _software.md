@@ -393,6 +393,7 @@ Symbolic Execution (only)
 * [Kite](http://www.cs.ubc.ca/labs/isd/Projects/Kite/) - conflict-driven symbolic execution tool (proof of concept)
 * [jCUTE](https://github.com/osl/jcute) - Java Concolic Unit Testing Engine, automatically generate unit tests for Java programs.
 * [ExpoSE](https://github.com/ExpoSEJS/ExpoSE) - dynamic symbolic execution engine for JavaScript.
+* [ESILSolve](https:/github.com/aemmitt-ns/esilsolve) - python symbolic execution framework using r2 and ESIL.
 
 Binary lifting
 
