@@ -39,13 +39,15 @@ In most case, the target of Software Reversing is code in compiled form (native 
     - [Injectors](#injectors)
     - [HTTP Intercept Proxy](#http-intercept-proxy)
     - [Reconstructors](#reconstructors)
-    - [Scripting](#scripting)
     - [Unpackers](#unpackers)
     - [Obfuscators](#obfuscators)
     - [Deobfuscators](#deobfuscators)
     - [Binary Visualization](#binary-visualization)
     - [Document Analysis](#document-analysis)
     - [Misc](#misc)
+- Scripting
+    - [IDA Pro](#ida-script)
+    - [Ghidra](#ghidra-script)
 
 - - - 
 
@@ -439,18 +441,6 @@ Data-type reconstructor
 * [ReClassEx](https://github.com/dude719/ReClassEx)
 * [ReClass.NET](https://github.com/KN4CK3R/ReClass.NET) - port of ReClass to .NET
 
-## Scripting
-
-* [IDA Python Src](https://github.com/idapython/src)
-* [IDC Functions Doc](https://www.hex-rays.com/products/ida/support/idadoc/162.shtml)
-* [Using IDAPython to Make your Life Easier](http://researchcenter.paloaltonetworks.com/tag/idapython/)
-* [Introduction to IDA Python](https://tuts4you.com/download.php?view.3229)
-* [The Beginner's Guide to IDA Python](https://leanpub.com/IDAPython-Book)
-* [IDA Plugin Contest](https://www.hex-rays.com/contests/)
-* [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list)
-* [pefile Python Libray](https://github.com/erocarrera/pefile)
-* [ghidra ninja](https://github.com/ghidraninja/ghidra_scripts)
-
 ## Unpackers
 
 * [FUU](https://github.com/crackinglandia/fuu) - [F]aster [U]niversal [U]npacker
@@ -508,3 +498,29 @@ See also [Data & Format Reversing](_format.md).
 ## Misc
 
 - [bingrep](https://github.com/m4b/bingrep) - grep through binaries
+
+- - - 
+
+## IDA Script
+
+* [IDA Python Src](https://github.com/idapython/src) - source code for IDAPython plugin, enable python script running in IDA Pro .
+
+references
+
+* [IDC Functions Doc](https://www.hex-rays.com/products/ida/support/idadoc/162.shtml)
+* [Using IDAPython to Make your Life Easier](http://researchcenter.paloaltonetworks.com/tag/idapython/)
+* [Introduction to IDA Python](https://tuts4you.com/download.php?view.3229)
+* [The Beginner's Guide to IDA Python](https://leanpub.com/IDAPython-Book)
+* [IDA Plugin Contest](https://www.hex-rays.com/contests/)
+
+Script collection
+
+* [fireeye/flare-ida](https://github.com/fireeye/flare-ida) - multiple IDA plugins and IDAPython scripts by FLARE team.
+* [devttys0/ida](https://github.com/devttys0/ida) - collection of IDAPython plugins/scripts/modules.
+* [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list) - list of ida scripts (IDC / IDAPython), links to many repository.
+
+## Ghidra Script
+
+Script collection
+
+* [ghidra ninja](https://github.com/ghidraninja/ghidra_scripts)
