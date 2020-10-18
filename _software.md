@@ -262,6 +262,11 @@ Lua decompiler
 * [UnLuac](https://sourceforge.net/projects/unluac/) - decompiler for Lua 5.0 - 5.4 and require debugging information (non-stripped).
 * [LuaDec](https://github.com/viruscamp/luadec) - decompiler based on luadec 5.0.x and LuaDec51.
 
+AutoIT decompiler
+
+* [myAut2Exe](https://github.com/dzzie/myaut_contrib) - scan and extract the AutoIT script.
+* [Exe2Aut](http://domoticx.com/autoit3-decompiler-exe2aut) - extract the AutoIT script by running it.
+
 ## Debuggers
 
 Multi/cross platform
