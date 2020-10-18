@@ -256,6 +256,11 @@ Delphi decompiler
 
 * [Interactive Delphi Reconstructor](https://github.com/crypto2011/IDR)
 
+Lua decompiler
+
+* [UnLuac](https://sourceforge.net/projects/unluac/) - decompiler for Lua 5.0 - 5.4 and require debugging information (non-stripped).
+* [LuaDec](https://github.com/viruscamp/luadec) - decompiler based on luadec 5.0.x and LuaDec51.
+
 ## Debuggers
 
 Multi/cross platform
