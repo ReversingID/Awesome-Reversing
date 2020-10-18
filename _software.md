@@ -346,10 +346,17 @@ Misc
 
 ## Dynamic Binary Instrumentation
 
+Native 
+
 * [DynamoRIO](http://www.dynamorio.org) - runtime code manipulation system that supports code transformation on any part of program.
 * [Frida](https://frida.re) - scriptable DBI toolkit for cross-platform target.
 * [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool)
 * [QBDI](https://qbdi.quarkslab.com/) - modular, cross-platform, and cross-architecture DBI framework backed by LLVM.
+
+.NET
+
+- [Hawkeye2](https://github.com/odalet/Hawkeye2) - view, edit, analyze, and invoke (almost) any object from .net applications.
+- [UnityDoorstop](https://github.com/NeighTools/UnityDoorstop) - execute managed assemblies inside Unity as early as possible.
 
 ## Binary Analysis Framework
 
@@ -361,7 +368,7 @@ Misc
 * [BARF](https://github.com/programa-stic/barf-project)
 * [S2E](https://s2e.systems/) - platform for in-vivo analysis of software systems.
 * [miasm](https://miasm.re/) - analyze / modify / generate binary program with python.
-* [soot](https://github.com/Sable/soot) - java optimization framework
+* [soot](https://github.com/soot-oss/soot) - java optimization framework
 
 Symbolic execution
 
