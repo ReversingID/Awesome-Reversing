@@ -135,7 +135,7 @@ Specific topic on Software Reverse Engineering
 
 Learning Assembly
 
-* [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference) - coming soon
+* [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference)
 
 Intermediate Representation
 
