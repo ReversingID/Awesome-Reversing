@@ -79,6 +79,13 @@ Specific topic on Software Reverse Engineering
 * [Next Generation debugger for reverse engineering](https://www.blackhat.com/presentations/bh-europe-07/ERSI/Whitepaper/bh-eu-07-ersi-WP-apr19.pdf)
 * [Behind Enemy Lines Reverse Engineering C++ in Modern Ages](https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
 * [Overcoming Java Vulnerabilities](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
+* [Reverse engineering tools review](https://www.pelock.com/articles/reverse-engineering-tools-review)
+* [Intercepting DLL libraries calls. API hooking in practice](https://www.pelock.com/articles/intercepting-dll-libraries-calls-api-hooking-in-practice)
+* [Windows Hot Patching Mechanism Explained](https://dev.to/pelock/windows-hot-patching-mechanism-explained-2m1f)
+* [How to write a CrackMe for a CTF competition](https://www.pelock.com/articles/how-to-write-a-crackme-for-a-ctf-competition)
+* [Anti reverse engineering. Malware vs Antivirus Software](https://www.pelock.com/articles/reverse-engineering-tools-review)
+* [Code of destruction – malware analysis](https://www.pelock.com/articles/code-of-destruction-malware-analysis)
+* [Polymorphic Encryption Algorithms](https://www.pelock.com/articles/polymorphic-encryption-algorithms)
 
 ## Courses
 
@@ -138,6 +145,8 @@ Specific topic on Software Reverse Engineering
 Learning Assembly
 
 * [Low-level Code Reference](https://github.com/ReversingID/LowLevelCode-Reference)
+* [Assembly code size optimization tricks](https://dev.to/pelock/assembly-code-size-optimization-tricks-2abd)
+* [When and how to use an assembler. Assembly programming basics](https://www.pelock.com/articles/when-and-how-to-use-an-assembler-assembly-programming-basics)
 
 Intermediate Representation
 
@@ -161,6 +170,7 @@ Windows
 * [HxD](https://mh-nexus.de/en/hxd/)
 * [Hex Workshop](http://www.hexworkshop.com/)
 * [Hexinator](https://hexinator.com/)
+* [HIEW](http://www.hiew.ru/)
 
 Mac OS X
 
@@ -205,6 +215,7 @@ Java bytecode editor
 
 * [Recaf](https://github.com/Col-E/Recaf)
 * [JByteMode](https://github.com/GraxCode/JByteMod-Beta)
+* [dirtyJOE](http://dirty-joe.com/)
 
 ## Disassemblers & Decompilers
 
@@ -460,6 +471,8 @@ Native
 
 * [LLVM Deobfuscator](https://github.com/RPISEC/llvm-deobfuscator)
 * [SATURN]() - software deobfuscation framework based on LLVM.
+* [Assembly Source Code Obfuscator](https://www.pelock.com/products/obfuscator)
+* [AutoIt Source Code Obfuscator](https://www.pelock.com/products/autoit-obfuscator)
 
 Java
 
