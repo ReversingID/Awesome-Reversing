@@ -22,6 +22,7 @@ In most case, the target of Software Reversing is code in compiled form (native 
 - Resources
     - [Books](#books)
     - [White Papers](#hite-papers)
+    - [Articles](#articles)
     - [Courses](#courses)
     - [Channels](#channels)
     - [Practices](#practices)
@@ -80,12 +81,16 @@ Specific topic on Software Reverse Engineering
 * [Behind Enemy Lines Reverse Engineering C++ in Modern Ages](https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
 * [Overcoming Java Vulnerabilities](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
 * [Reverse engineering tools review](https://www.pelock.com/articles/reverse-engineering-tools-review)
+
+## Articles
+
 * [Intercepting DLL libraries calls. API hooking in practice](https://www.pelock.com/articles/intercepting-dll-libraries-calls-api-hooking-in-practice)
 * [Windows Hot Patching Mechanism Explained](https://dev.to/pelock/windows-hot-patching-mechanism-explained-2m1f)
 * [How to write a CrackMe for a CTF competition](https://www.pelock.com/articles/how-to-write-a-crackme-for-a-ctf-competition)
 * [Anti reverse engineering. Malware vs Antivirus Software](https://www.pelock.com/articles/reverse-engineering-tools-review)
 * [Code of destruction – malware analysis](https://www.pelock.com/articles/code-of-destruction-malware-analysis)
 * [Polymorphic Encryption Algorithms](https://www.pelock.com/articles/polymorphic-encryption-algorithms)
+* [Reversing reading]() - coming soon.
 
 ## Courses
 
@@ -465,14 +470,17 @@ Native
 * [Stunnix](http://stunnix.com/prod/cxxo/)
 * [M/o/Vfuscator](https://github.com/xoreaxeaxeax/movfuscator)
 
+AutoIt scripts
+
+* [Assembly Source Code Obfuscator](https://www.pelock.com/products/obfuscator)
+* [AutoIt Source Code Obfuscator](https://www.pelock.com/products/autoit-obfuscator)
+
 ## Deobfuscators
 
 Native
 
 * [LLVM Deobfuscator](https://github.com/RPISEC/llvm-deobfuscator)
 * [SATURN]() - software deobfuscation framework based on LLVM.
-* [Assembly Source Code Obfuscator](https://www.pelock.com/products/obfuscator)
-* [AutoIt Source Code Obfuscator](https://www.pelock.com/products/autoit-obfuscator)
 
 Java
 
