@@ -444,6 +444,7 @@ Windows
 
 * [Fiddler](https://www.telerik.com/fiddler)
 * [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+* [Charles](https://www.charlesproxy.com/)
 
 ## Reconstructors
 
