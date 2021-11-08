@@ -210,6 +210,7 @@ Dependency check
 
 Format parser and modification
 
+* [ImHex](https://github.com/WerWolv/ImHex) - explore, edit, and represent binary structure with C++-like pattern language.  
 * [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach 
 * [LIEF](https://lief.quarkslab.com/) - Library to Instrument Executable Formats, easily parse, modify and abstract many file formats.
 * [QuickBMS](http://aluigi.altervista.org/quickbms.htm) - easily extract and modify file format with support of encryption, compressions, obfuscation, and other algorithms.
