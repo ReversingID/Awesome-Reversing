@@ -51,6 +51,7 @@ Mac OS X
 ## Structure Parser
 
 * [010 Editor](http://www.sweetscape.com/010editor/)
+* [ImHex](https://github.com/WerWolv/ImHex)
 * [Kaitai Struct](https://kaitai.io)
 
 ## Binary Visualization
