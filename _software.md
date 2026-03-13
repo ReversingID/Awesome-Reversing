@@ -351,6 +351,7 @@ Packet Capture
 
 * [SmartSniff](http://www.nirsoft.net/utils/smsniff.html)
 * [Wireshark](https://www.wireshark.org/download.html)
+* [sfs2x-py](https://github.com/KeepALifeUS/sfs2x-py) - Pure Python implementation of the SmartFoxServer 2X binary protocol for packet analysis, MITM proxying, and game bot development.
 
 Process
 
