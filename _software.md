@@ -229,6 +229,7 @@ Native code disassembler and decompiler
 
 * [Ghidra](https://ghidra-sre.org/)
 * [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
+* [ida-hive](https://github.com/yynps737/ida-hive) - Native multi-instance IDA Pro MCP server for AI-driven analysis (Rust + C++). 60 tools, 100 concurrent sessions.
 * [Binary Ninja](https://binary.ninja/)
 * [Relyze Desktop](https://relyze.com)
 * [Radare2](http://www.radare.org/r/) // [Cutter](https://cutter.re)
@@ -304,6 +305,7 @@ Windows
 
 * [WinDbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools)
 * [x64dbg](http://x64dbg.com/#start)
+* [x64dbg-hive](https://github.com/yynps737/x64dbg-hive) - Native x64dbg MCP server for AI-powered debugging (C++ plugin + Rust). 92 tools: disassembly, breakpoints, memory, registers, tracing, anti-debug.
 * [Immunity Debugger](http://debugger.immunityinc.com/)
 
 Linux
