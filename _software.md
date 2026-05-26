@@ -522,6 +522,7 @@ See also [Data & Format Reversing](_format.md).
 ## Misc
 
 - [bingrep](https://github.com/m4b/bingrep) - grep through binaries
+- [Assembly REPL](https://github.com/pirate/assembly-repl) - native raw assembly, LLVM IR, C, C++, and Objective-C REPLs for macOS and Linux.
 
 - - - 
 
