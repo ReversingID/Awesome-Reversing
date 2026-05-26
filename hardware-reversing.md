@@ -1,4 +1,4 @@
-# Awesome Hardware Reverse Engineering
+# Awesome Hardware Reverse Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of awesome reverse engineering resources to make you better! 
 

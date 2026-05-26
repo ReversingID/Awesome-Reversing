@@ -6,35 +6,11 @@ Reversing is the process of, partially or fully, recovering the design, requirem
 
 ## Contents
 
-Reverse Engineering is a large topic, so we divide it into several specializations:
+Reverse Engineering is a large topic, so we divide into several domains:
 
-- [Software Reverse Engineering](#software-reverse-engineering)
-- [Hardware Reverse Engineering](#hardware-reverse-engineering)
-- [Format Reverse Engineering](#format-reverse-engineering)
-- [Database Reverse Engineering](#database-reverse-engineering)
-
-## Software Reverse Engineering
-
-Read the [list](_software.md).
-
-Software Reverse Engineering focus on code, related data, and architecture which build a complete software.
-
-In most case, the target of Software Reversing is code in compiled form (native or intermediate), either executable or libraries.
-
-## Hardware Reverse Engineering
-
-Read the [list](_hardware.md)
-
-Hardware Reverse Engineering focus on circuitry (boards, ICs) and intercomponent relation. 
-
-## Format Reverse Engineering
-
-Read the [list](_format.md)
-
-Data Format Reverse Engineering focus on representation and interpretation of structured data in stored or transmitted form.
-
-## Database Reverse Engineering
-
-Read the [list](_database.md)
-
-Database Reverse Engineering focus on collection of structured data (entities) and relationship among them.
+| Domain | Description | Key Topics |
+| -------|-------------|------------|
+| [Software Reverse Engineering](software-reversing.md) | Code, executable, libraries | Disassemblers, Debuggers, DBI |
+| [Hardware Reverse Engineering](hardware-reversing.md) | Circuits, ICs, firmware | JTAG, Logic Analyzers, Firmware extraction |
+| [Format Reverse Engineering](format-reversing.md) | File formats, protocols | Parser, Hex editors |
+| [Database Reverse Engineering](#database-reversing.md) | Structured data, schemas | SQL, NoSQL, schema recovery |
