@@ -281,6 +281,10 @@ Python decompiler
 
 * [uncompyle6](https://pypi.org/project/uncompyle6/)
 * [decompile3](https://github.com/rocky/python-decompile3) - reworking and refactoring of `uncompyle6` which focus on Python 3.7+
+* [pycdc](https://github.com/zrax/pycdc) - disassembler and decompiler written in C++
+* [dis](https://docs.python.org/3/library/dis.html) - built-in python disassembler
+* [pyfalcon](https://github.com/Svenskithesource/pyfalcon) - cross-version Python disassembler written in Rust.
+* [pycdas](https://github.com/zrax/pycdc) - disassembler written in C++
 
 Flash decompiler
 
@@ -346,6 +350,11 @@ Hypervisor debugger
 
 * [HyperDbg](https://github.com/rmusser01/hyperdbg/) - minimalistic hypervisor with hardware-assisted virtualization to debug kernel.
 
+Python source code/bytecode debuggers
+
+* [pdb](https://docs.python.org/3/library/pdb.html) - built-in python interactive source debugger
+* [python3-trepan](https://github.com/rocky/python3-trepan) - gdb-like debugger supports both source code and bytecode debugging
+
 GDB enrichment
 
 * [PEDA](https://github.com/longld/peda)
@@ -395,7 +404,7 @@ Tracer
 
 * [API Monitor](http://www.rohitab.com/apimonitor)
 * [Process Monitor](https://technet.microsoft.com/en-us/sysinternals/processmonitor)
-* [SpyStudio](https://www.nektra.com/products/spystudio-api-monitor/)
+* [Studio](https://www.nektra.com/products/spystudio-api-monitor/)
 * [fibratus](https://github.com/rabbitstack/fibratus) - explore and trace windows kernel
 * [TCPView](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview)
 * [CDA: Code Dynamic Analysis](http://split-code.com/cda.html)
@@ -523,6 +532,11 @@ Native
 * [LLVM Deobfuscator](https://github.com/RPISEC/llvm-deobfuscator)
 * [SATURN]() - software deobfuscation framework based on LLVM.
 
+Python
+
+* [bonedensity](https://github.com/nesrak1/bonedensity) - deobfuscator for PyArmor
+* [Hyperion-deobfuscator](https://github.com/xKiian/Hyperion-deobfuscator) - deobfuscator for Hyperion
+
 Java
 
 * [Java Deobfuscator](https://javadeobfuscator.com/)
@@ -571,10 +585,25 @@ See also [Data & Format Reversing](_format.md).
 
 ## MCP
 
-MCP server for various tools
+MCP (Model Context Protocol) server for various tools
+
+#### Disassembler
 
 * [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via Model Context Protocol (MCP), enables LLM-driven reversing workflows.
-* []
+* [GhidraMCP](https://github.com/LaurieWired/GhidraMCP)
+
+#### Debuggers
+
+- [LLDB](https://lldb.llvm.org/use/mcp.html) - ⭐ Official native MCP support as of June 2025, plus community implementations.
+- [GDB MCP Server](https://www.pulsemcp.com/servers/pansila-gdb) - Multiple implementations providing comprehensive debugging capabilities.
+
+#### Dynamic Binary Instrumentations
+
+- [frida-mcp](https://github.com/dnakov/frida-mcp) - MCP server for Frida with process management, script injection, and real-time instrumentation.
+
+#### Behavior Analysis
+
+* [WireMCP](https://github.com/0xKoda/WireMCP) - Wireshark MCP server with threat detection capabilities.
 
 - - - 
 
