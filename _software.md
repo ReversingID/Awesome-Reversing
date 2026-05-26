@@ -33,6 +33,7 @@ In most case, the target of Software Reversing is code in compiled form (native 
     - [Bytecode Editor](#bytecode-editors)
     - [Disassemblers & Decompilers](#disassemblers--decompilers)
     - [Debuggers](#debuggers)
+    - [Dumpers](#dumpers)
     - [Behavior Analysis](#behavior-analysis)
     - [Dynamic Binary Instrumentation](#dynamic-binary-instrumentation)
     - [Binary Analysis Framework](#binary-analysis-framework)
@@ -46,6 +47,7 @@ In most case, the target of Software Reversing is code in compiled form (native 
     - [Binary Visualization](#binary-visualization)
     - [Document Analysis](#document-analysis)
     - [Misc](#misc)
+    - [MCP](#mcp)
 - Scripting
     - [IDA Pro](#ida-script)
     - [Ghidra](#ghidra-script)
@@ -59,7 +61,7 @@ Reversing Concept
 * [Reverse Engineering for Beginners](http://beginners.re/)
 * [Practical Reverse Engineering](http://amzn.com/B00IA22R2Y)
 * [Reversing: Secrets of Reverse Engineering](http://amzn.com/B007032XZK)
-* [Practical Malware Analysis](http://amzn.com/1593272901)
+* [Practical Binary Analysis](https://nostarch.com/binaryanalysis)
 
 Tools
 
@@ -68,6 +70,13 @@ Tools
 Assembly and languages
 
 * [Assembly Language for Intel-Based Computers (5th Edition) ](http://a.co/4OR6I9U)
+
+Malware Analysis
+
+* [Practical Malware Analysis](http://amzn.com/1593272901)
+* [Learning Malware Analysis](https://a.co/d/04uklce9)
+* [Malware Analyst's Cookbook](http://amzn.com/B0047DWCMA)
+* [Rootkits and Bootkits](https://nostarch.com/rootkits)
 
 Specific topic on Software Reverse Engineering
 
@@ -106,8 +115,7 @@ Specific topic on Software Reverse Engineering
 * [Modern Binary Exploitation](http://security.cs.rpi.edu/courses/binexp-spring2015/)
 * [RPISEC Malware Course](https://github.com/RPISEC/Malware)
 * [begin.re](https://www.begin.re/)
-* [RE101](https://securedorg.github.io/RE101/)
-* [RE102](https://securedorg.github.io/RE102/)
+* [RE101](https://securedorg.github.io/RE101/) + [RE102](https://securedorg.github.io/RE102/)
 * [ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)
 * [Offensive and Defensive Android Reversing](https://github.com/rednaga/training/raw/master/DEFCON23/O%26D%20-%20Android%20Reverse%20Engineering.pdf)
 
@@ -129,6 +137,8 @@ Specific topic on Software Reverse Engineering
 
 *Practice Reverse Engineering*
 
+Crackmes and reversing challenges
+
 * [Reversing.ID Crackmes Repository](https://github.com/ReversingID/Crackmes-Repository/)
 * [Crackmes.one](http://www.crackmes.one/)
 * [OSX Crackmes](https://reverse.put.as/crackmes/)
@@ -137,6 +147,10 @@ Specific topic on Software Reverse Engineering
 * [Github CTF Archives](http://github.com/ctfs/)
 * [Reverse Engineering Challenges](http://challenges.re/)
 * [xorpd Advanced Assembly Exercises](http://www.xorpd.net/pages/xchg_rax/snip_00.html)
+* [CrackMy.App](https://crackmy.app/)
+
+Malware samples and information sharing
+
 * [Virusshare.com](http://virusshare.com/)
 * [Contagio](http://contagiodump.blogspot.com/)
 * [Malware-Traffic-Analysis](https://malware-traffic-analysis.com/)
@@ -352,6 +366,13 @@ Graphic Debugger
 * [RenderDoc](https://renderdoc.org/)
 * [PIX](https://blogs.msdn.microsoft.com/pix/download/)
 
+## Dumpers
+
+Android DEX dumper
+
+* [eBPFDexDumper](https://github.com/LLeavesG/eBPFDexDumper) - dump DEX from memory using eBPF hooking on Android.
+* [eBPFDexDumper-rs](https://github.com/chinleez/eBPFDexDumper-rs) - Alternative of dumping DEX from memory using eBPF (written in Rust).
+
 ## Behavior Analysis
 
 Network simulation
@@ -404,8 +425,12 @@ Native
 
 .NET
 
-- [Hawkeye2](https://github.com/odalet/Hawkeye2) - view, edit, analyze, and invoke (almost) any object from .net applications.
-- [UnityDoorstop](https://github.com/NeighTools/UnityDoorstop) - execute managed assemblies inside Unity as early as possible.
+* [Hawkeye2](https://github.com/odalet/Hawkeye2) - view, edit, analyze, and invoke (almost) any object from .net applications.
+* [UnityDoorstop](https://github.com/NeighTools/UnityDoorstop) - execute managed assemblies inside Unity as early as possible.
+
+Android
+
+* [ArtHook](https://github.com/aimardcr/ArtHook) - self-contained, dependency-free ART method hooking for Android 8-15
 
 ## Binary Analysis Framework
 
@@ -519,6 +544,12 @@ String extraction
 * [FLOSS](https://github.com/fireeye/flare-floss)
 * [NoMoreXOR](https://github.com/hiddenillusion/NoMoreXOR)
 
+Android Specific
+
+* [ObfuDEScate](https://github.com/user1342/Obfu-DE-Scate)
+* [TinySmaliEmulator](https://github.com/amoulu/TinySmaliEmulator)
+* [simplify](https://github.com/CalebFenton/simplify)
+
 ## Binary Visualization
 
 See also [Data & Format Reversing](_format.md).
@@ -535,8 +566,15 @@ See also [Data & Format Reversing](_format.md).
 
 ## Misc
 
-- [bingrep](https://github.com/m4b/bingrep) - grep through binaries
-- [Assembly REPL](https://github.com/pirate/assembly-repl) - native raw assembly, LLVM IR, C, C++, and Objective-C REPLs for macOS and Linux.
+* [bingrep](https://github.com/m4b/bingrep) - grep through binaries
+* [Assembly REPL](https://github.com/pirate/assembly-repl) - native raw assembly, LLVM IR, C, C++, and Objective-C REPLs for macOS and Linux.
+
+## MCP
+
+MCP server for various tools
+
+* [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via Model Context Protocol (MCP), enables LLM-driven reversing workflows.
+* []
 
 - - - 
 
@@ -557,7 +595,6 @@ Script collection
 * [fireeye/flare-ida](https://github.com/fireeye/flare-ida) - multiple IDA plugins and IDAPython scripts by FLARE team.
 * [devttys0/ida](https://github.com/devttys0/ida) - collection of IDAPython plugins/scripts/modules.
 * [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list) - list of ida scripts (IDC / IDAPython), links to many repository.
-* [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via Model Context Protocol (MCP), enables LLM-driven reversing workflows.
 
 ## Ghidra Script
 
