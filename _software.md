@@ -287,6 +287,18 @@ AutoIT decompiler
 * [myAut2Exe](https://github.com/dzzie/myaut_contrib) - scan and extract the AutoIT script.
 * [Exe2Aut](http://domoticx.com/autoit3-decompiler-exe2aut) - extract the AutoIT script by running it.
 
+Dart / Flutter disassembler
+
+* [unflutter](https://github.com/zboralski/unflutter) - static analyzer for Flutter/Dart AOT snapshots, recovers function names, class layouts, and generates Ghidra/IDA metadata.
+
+JavaScript bytecode disassembler
+
+* [spidermonkey-dumper](https://github.com/zboralski/spidermonkey-dumper) - decode and disassemble SpiderMonkey .jsc bytecode from Cocos2d-x games.
+
+Cocos2d-x / game binary analysis
+
+* [reverse](https://github.com/zboralski/reverse) - static analysis and XXTEA key extraction tool for Cocos2d-x apps.
+
 Ethereum (EVM) Solidity disassembler / decompiler
 
 * [evmdis](https://github.com/Arachnid/evmdis) - EVM disassembler by static analysis on the bytecode.
@@ -431,6 +443,7 @@ Theorem prover and solver
 * [unicorn](https://github.com/unicorn-engine/unicorn)
 * [libemu](http://libemu.carnivore.it)
 * [pegasus](https://github.com/imugee/pegasus)
+* [galago](https://github.com/zboralski/galago) - ARM64 emulation for XXTEA key extraction from Cocos2d-x native libraries.
 
 ## Injectors
 
@@ -543,6 +556,7 @@ Script collection
 * [fireeye/flare-ida](https://github.com/fireeye/flare-ida) - multiple IDA plugins and IDAPython scripts by FLARE team.
 * [devttys0/ida](https://github.com/devttys0/ida) - collection of IDAPython plugins/scripts/modules.
 * [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list) - list of ida scripts (IDC / IDAPython), links to many repository.
+* [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via Model Context Protocol (MCP), enables LLM-driven reversing workflows.
 
 ## Ghidra Script
 
