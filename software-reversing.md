@@ -21,36 +21,39 @@ In most case, the target of Software Reversing is code in compiled form (native 
 
 - Resources
     - [Books](#books)
-    - [White Papers](#hite-papers)
+    - [White Papers](#white-papers)
     - [Articles](#articles)
     - [Courses](#courses)
     - [Channels](#channels)
     - [Practices](#practices)
     - [References](#references)
-- Tools
+- [Static Analysis](#static-analysis)
     - [Hex Editors](#hex-editors)
-    - [Binary Format](#binary-format)
-    - [Bytecode Editor](#bytecode-editors)
+    - [Binary Format & Inspection](#binary-format--inspection)
+    - [Bytecode Editors](#bytecode-editors)
     - [Disassemblers & Decompilers](#disassemblers--decompilers)
+- [Dynamic Analysis](#dynamic-analysis)
     - [Debuggers](#debuggers)
-    - [Dumpers](#dumpers)
-    - [Behavior Analysis](#behavior-analysis)
     - [Dynamic Binary Instrumentation](#dynamic-binary-instrumentation)
-    - [Binary Analysis Framework](#binary-analysis-framework)
     - [Code Emulators](#code-emulators)
-    - [Injectors](#injectors)
+    - [Behavior Analysis](#behavior-analysis)
     - [HTTP Intercept Proxy](#http-intercept-proxy)
-    - [Reconstructors](#reconstructors)
-    - [Unpackers](#unpackers)
+- [Automation & Frameworks](#automation--frameworks)
+    - [Binary Analysis Framework](#binary-analysis-framework)
+- [Code Protection & Anti-Analysis](#code-protection--anti-analysis)
     - [Obfuscators](#obfuscators)
     - [Deobfuscators](#deobfuscators)
+    - [Unpackers](#unpackers)
+    - [Reconstructors](#reconstructors)
+    - [Dumpers](#dumpers)
+- [Visualization & Misc](#visualization--misc)
     - [Binary Visualization](#binary-visualization)
     - [Document Analysis](#document-analysis)
     - [Misc](#misc)
-    - [MCP](#mcp)
-- Scripting
-    - [IDA Pro](#ida-script)
-    - [Ghidra](#ghidra-script)
+- [MCP Servers](#mcp-servers)
+- [Tool Scripting & Plugins](#tool-scripting--plugins)
+    - [IDA Pro](#ida-pro-scripting)
+    - [Ghidra](#ghidra-scripting)
 
 - - - 
 
@@ -175,7 +178,9 @@ Intermediate Representation
 
 - - - 
 
-## Hex Editors
+## Static Analysis
+
+### Hex Editors
 
 Hex editor lets you view/edit the binary data of a file.
 
@@ -184,7 +189,7 @@ Multi/cross platform
 * [010 Editor](http://www.sweetscape.com/010editor/)
 * [wxHexEditor](https://www.wxhexeditor.org/)
 
-Windows 
+Windows
 
 * [HxD](https://mh-nexus.de/en/hxd/)
 * [Hex Workshop](http://www.hexworkshop.com/)
@@ -195,7 +200,7 @@ Mac OS X
 
 * [HexFiend](http://ridiculousfish.com/hexfiend/)
 
-## Binary Format
+### Binary Format & Inspection
 
 File information and format identifier
 
@@ -224,12 +229,12 @@ Dependency check
 
 Format parser and modification
 
-* [ImHex](https://github.com/WerWolv/ImHex) - explore, edit, and represent binary structure with C++-like pattern language.  
-* [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach 
+* [ImHex](https://github.com/WerWolv/ImHex) - explore, edit, and represent binary structure with C++-like pattern language.
+* [Kaitai Struct](https://kaitai.io) - develop format parsers by declarative approach.
 * [LIEF](https://lief.quarkslab.com/) - Library to Instrument Executable Formats, easily parse, modify and abstract many file formats.
 * [QuickBMS](http://aluigi.altervista.org/quickbms.htm) - easily extract and modify file format with support of encryption, compressions, obfuscation, and other algorithms.
 
-## Bytecode Editors
+### Bytecode Editors
 
 Java bytecode editor
 
@@ -237,9 +242,9 @@ Java bytecode editor
 * [JByteMode](https://github.com/GraxCode/JByteMod-Beta)
 * [dirtyJOE](http://dirty-joe.com/)
 
-## Disassemblers & Decompilers
+### Disassemblers & Decompilers
 
-Native code disassembler and decompiler
+**Native (x86 / x64 / ARM)**
 
 * [Ghidra](https://ghidra-sre.org/)
 * [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
@@ -251,78 +256,88 @@ Native code disassembler and decompiler
 * [Retdec](https://retdec.com/)
 * [Snowman](https://derevenets.com/)
 * [objdump](http://linux.die.net/man/1/objdump)
-* [Medussa](https://github.com/wisk/medusa)
+* [Medusa](https://github.com/wisk/medusa)
 * [Plasma](https://github.com/joelpx/plasma)
 * [Capstone](http://www.capstone-engine.org/) - lightweight multi-platform, multi-architecture disassembly framework based on LLVM.
 * [distorm3](https://github.com/gdabah/distorm) - lightweight library for disassembling binary stream.
 * [zydis](https://github.com/zyantific/zydis) - fast and lightweight x86/x86-64 disassembler library.
 
-Android application disassembler / decoder
+**Android / DEX**
 
 * [JEB2](https://www.pnfsoftware.com/jeb2/) - eclipse-based integrated reverse engineering platform for analyzing various parts of Android application components.
+* [jadx](https://github.com/skylot/jadx) - DEX to Java decompiler
 
-Java decompiler
-
-* [Bytecode Viewer](https://bytecodeviewer.com/) - aggregate of various tools
-* [Procyon](https://bitbucket.org/mstrobel/procyon)
-* [CFR](http://www.benf.org/other/cfr/)
-* [FernFlower](https://github.com/fesh0r/fernflower)
-* [Krakatau](https://github.com/Storyyeller/Krakatau)
-* [Luyten](https://github.com/deathmarine/Luyten)
-
-.NET decompiler
+**.NET**
 
 * [dnSpy](https://github.com/0xd4d/dnSpy)
 * [JustDecompile](https://www.telerik.com/products/decompiler.aspx)
 * [dotPeek](https://www.jetbrains.com/decompiler/)
 * [ILSpy](http://www.ilspy.net/)
 
-Python decompiler
-
-* [uncompyle6](https://pypi.org/project/uncompyle6/)
-* [decompile3](https://github.com/rocky/python-decompile3) - reworking and refactoring of `uncompyle6` which focus on Python 3.7+
-* [pycdc](https://github.com/zrax/pycdc) - disassembler and decompiler written in C++
-* [dis](https://docs.python.org/3/library/dis.html) - built-in python disassembler
-* [pyfalcon](https://github.com/Svenskithesource/pyfalcon) - cross-version Python disassembler written in Rust.
-* [pycdas](https://github.com/zrax/pycdc) - disassembler written in C++
-
-Flash decompiler
-
-* [JPEXS Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) - open source SWF decompiler and editor, convert SWF to FLA, edit ActionScript, replace resources (images, sounds, texts, fonts).
-* [Flare](http://www.nowrap.de/flare.html) - Extract all scripts from SWF.
-
-Delphi decompiler
-
-* [Interactive Delphi Reconstructor](https://github.com/crypto2011/IDR)
-
-Lua decompiler
-
-* [UnLuac](https://sourceforge.net/projects/unluac/) - decompiler for Lua 5.0 - 5.4 and require debugging information (non-stripped).
-* [LuaDec](https://github.com/viruscamp/luadec) - decompiler based on luadec 5.0.x and LuaDec51.
-
-AutoIT decompiler
+**AutoIT**
 
 * [myAut2Exe](https://github.com/dzzie/myaut_contrib) - scan and extract the AutoIT script.
 * [Exe2Aut](http://domoticx.com/autoit3-decompiler-exe2aut) - extract the AutoIT script by running it.
 
-Dart / Flutter disassembler
-
-* [unflutter](https://github.com/zboralski/unflutter) - static analyzer for Flutter/Dart AOT snapshots, recovers function names, class layouts, and generates Ghidra/IDA metadata.
-
-JavaScript bytecode disassembler
-
-* [spidermonkey-dumper](https://github.com/zboralski/spidermonkey-dumper) - decode and disassemble SpiderMonkey .jsc bytecode from Cocos2d-x games.
-
-Cocos2d-x / game binary analysis
+**Cocos2d-x / Game Binary**
 
 * [reverse](https://github.com/zboralski/reverse) - static analysis and XXTEA key extraction tool for Cocos2d-x apps.
 
-Ethereum (EVM) Solidity disassembler / decompiler
+**Dart / Flutter**
+
+* [unflutter](https://github.com/zboralski/unflutter) - static analyzer for Flutter/Dart AOT snapshots, recovers function names, class layouts, and generates Ghidra/IDA metadata.
+
+**Delphi**
+
+* [Interactive Delphi Reconstructor](https://github.com/crypto2011/IDR)
+
+**Ethereum (EVM / Solidity)**
 
 * [evmdis](https://github.com/Arachnid/evmdis) - EVM disassembler by static analysis on the bytecode.
 * [pyevmasm](https://github.com/crytic/pyevmasm) - assembler and disassembler library for EVM (Ethereum Virtual Machine).
 
-## Debuggers
+**Flash**
+
+* [JPEXS Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) - open source SWF decompiler and editor, convert SWF to FLA, edit ActionScript, replace resources (images, sounds, texts, fonts).
+* [Flare](http://www.nowrap.de/flare.html) - extract all scripts from SWF.
+
+**Java**
+
+* [Bytecode Viewer](https://bytecodeviewer.com/) - aggregate of various tools.
+* [Procyon](https://bitbucket.org/mstrobel/procyon)
+* [CFR](http://www.benf.org/other/cfr/)
+* [FernFlower](https://github.com/fesh0r/fernflower)
+* [Krakatau](https://github.com/Storyyeller/Krakatau)
+* [Luyten](https://github.com/deathmarine/Luyten)
+
+**JavaScript**
+
+* [spidermonkey-dumper](https://github.com/zboralski/spidermonkey-dumper) - decode and disassemble SpiderMonkey .jsc bytecode from Cocos2d-x games.
+
+**Lua**
+
+* [UnLuac](https://sourceforge.net/projects/unluac/) - decompiler for Lua 5.0 - 5.4 and require debugging information (non-stripped).
+* [LuaDec](https://github.com/viruscamp/luadec) - decompiler based on luadec 5.0.x and LuaDec51.
+
+**Python**
+
+* [uncompyle6](https://pypi.org/project/uncompyle6/)
+* [decompile3](https://github.com/rocky/python-decompile3) - reworking and refactoring of `uncompyle6` which focus on Python 3.7+
+* [pycdc](https://github.com/zrax/pycdc) - disassembler and decompiler written in C++.
+* [dis](https://docs.python.org/3/library/dis.html) - built-in python disassembler.
+* [pyfalcon](https://github.com/Svenskithesource/pyfalcon) - cross-version Python disassembler written in Rust.
+* [pycdas](https://github.com/zrax/pycdc) - disassembler written in C++.
+
+**WebAssembly (WASM)**
+
+* [WebAssembly Binary Toolkit (wabt)](https://github.com/webassembly/wabt) - official toolkit for disassemble and decompile WebAssembly.
+* [Re:Wasm](https://github.com/benediktwerner/rewasm)
+
+- - -
+
+## Dynamic Analysis
+
+### Debuggers
 
 Multi/cross platform
 
@@ -341,7 +356,7 @@ Linux
 * [QIRA](http://qira.me/) - timeless debugger which track all state while program is running.
 * [EDB](http://www.codef00.com/projects#debugger)
 
-Virtual Machine Introspection for debugging
+Virtual Machine Introspection
 
 * [rVMI](https://github.com/fireeye/rVMI)
 * [r2vmi](https://github.com/Wenzel/r2vmi)
@@ -352,16 +367,16 @@ Hypervisor debugger
 
 Python source code/bytecode debuggers
 
-* [pdb](https://docs.python.org/3/library/pdb.html) - built-in python interactive source debugger
-* [python3-trepan](https://github.com/rocky/python3-trepan) - gdb-like debugger supports both source code and bytecode debugging
+* [pdb](https://docs.python.org/3/library/pdb.html) - built-in python interactive source debugger.
+* [python3-trepan](https://github.com/rocky/python3-trepan) - gdb-like debugger supports both source code and bytecode debugging.
 
 GDB enrichment
 
 * [PEDA](https://github.com/longld/peda)
 * [GEF](https://github.com/hugsy/gef)
-* [Voltron](https://github.com/snare/voltron) - also available for LLDB, VDB, and WinDbg
+* [Voltron](https://github.com/snare/voltron) - also available for LLDB, VDB, and WinDbg.
 
-OllyDbg variant
+OllyDbg variants
 
 * [OllyDbg v1.10](http://www.ollydbg.de/)
 * [OllyDbg v2.01](http://www.ollydbg.de/version2.html)
@@ -370,26 +385,44 @@ OllyDbg variant
 * [Olly CiMs](https://tuts4you.com/download.php?view.1206)
 * [Olly UST_2bg](https://tuts4you.com/download.php?view.1206)
 
-Graphic Debugger
+Graphic debugger
 
 * [RenderDoc](https://renderdoc.org/)
 * [PIX](https://blogs.msdn.microsoft.com/pix/download/)
 
-## Dumpers
+### Dynamic Binary Instrumentation
 
-Android DEX dumper
+Native
 
-* [eBPFDexDumper](https://github.com/LLeavesG/eBPFDexDumper) - dump DEX from memory using eBPF hooking on Android.
-* [eBPFDexDumper-rs](https://github.com/chinleez/eBPFDexDumper-rs) - Alternative of dumping DEX from memory using eBPF (written in Rust).
+* [DynamoRIO](http://www.dynamorio.org) - runtime code manipulation system that supports code transformation on any part of program.
+* [Frida](https://frida.re) - scriptable DBI toolkit for cross-platform target.
+* [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool)
+* [QBDI](https://qbdi.quarkslab.com/) - modular, cross-platform, and cross-architecture DBI framework backed by LLVM.
 
-## Behavior Analysis
+.NET
+
+* [Hawkeye2](https://github.com/odalet/Hawkeye2) - view, edit, analyze, and invoke (almost) any object from .net applications.
+* [UnityDoorstop](https://github.com/NeighTools/UnityDoorstop) - execute managed assemblies inside Unity as early as possible.
+
+Android
+
+* [ArtHook](https://github.com/aimardcr/ArtHook) - self-contained, dependency-free ART method hooking for Android 8-15.
+
+### Code Emulators
+
+* [unicorn](https://github.com/unicorn-engine/unicorn)
+* [libemu](http://libemu.carnivore.it)
+* [pegasus](https://github.com/imugee/pegasus)
+* [galago](https://github.com/zboralski/galago) - ARM64 emulation for XXTEA key extraction from Cocos2d-x native libraries.
+
+### Behavior Analysis
 
 Network simulation
 
 * [iNetSim](http://www.inetsim.org/)
 * [Fakenet](http://practicalmalwareanalysis.com/fakenet/)
 
-Packet Capture
+Packet capture
 
 * [SmartSniff](http://www.nirsoft.net/utils/smsniff.html)
 * [Wireshark](https://www.wireshark.org/download.html)
@@ -405,7 +438,7 @@ Tracer
 * [API Monitor](http://www.rohitab.com/apimonitor)
 * [Process Monitor](https://technet.microsoft.com/en-us/sysinternals/processmonitor)
 * [Studio](https://www.nektra.com/products/spystudio-api-monitor/)
-* [fibratus](https://github.com/rabbitstack/fibratus) - explore and trace windows kernel
+* [fibratus](https://github.com/rabbitstack/fibratus) - explore and trace windows kernel.
 * [TCPView](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview)
 * [CDA: Code Dynamic Analysis](http://split-code.com/cda.html)
 
@@ -420,100 +453,56 @@ Misc
 * [XCode Instruments](https://developer.apple.com/xcode/download/) - XCode Instruments for Monitoring Files and Processes [User Guide](https://developer.apple.com/library/watchos/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html)
 * [dtrace script for Mac](http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/) - sudo dtruss = strace [dtrace recipes](http://mfukar.github.io/2014/03/19/dtrace.html)
 * [fs_usage](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/fs_usage.1.html) - report system calls and page faults related to filesystem activity in real-time.  File I/O: fs_usage -w -f filesystem
-* [dmesg](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/dmesg.8.html) - display the system message buffer
+* [dmesg](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/dmesg.8.html) - display the system message buffer.
 * [Mira](https://github.com/vwww-droid/Mira) - Runtime protection analysis platform for third-party Android and iOS apps, enabling AI to use host-app-side shell, Java, Native, and Frida capabilities for environment risk detection and hardening validation.
 
-## Dynamic Binary Instrumentation
-
-Native 
-
-* [DynamoRIO](http://www.dynamorio.org) - runtime code manipulation system that supports code transformation on any part of program.
-* [Frida](https://frida.re) - scriptable DBI toolkit for cross-platform target.
-* [Pin](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool)
-* [QBDI](https://qbdi.quarkslab.com/) - modular, cross-platform, and cross-architecture DBI framework backed by LLVM.
-
-.NET
-
-* [Hawkeye2](https://github.com/odalet/Hawkeye2) - view, edit, analyze, and invoke (almost) any object from .net applications.
-* [UnityDoorstop](https://github.com/NeighTools/UnityDoorstop) - execute managed assemblies inside Unity as early as possible.
-
-Android
-
-* [ArtHook](https://github.com/aimardcr/ArtHook) - self-contained, dependency-free ART method hooking for Android 8-15
-
-## Binary Analysis Framework
-
-* [Angr](http://angr.io/) - python framework for analyzing binaries, combines both static and dynamic symbolic (concolic) analysis.
-* [Triton](https://triton.quarkslab.com) - dynamic binary analysis (DBA) framework.
-* [BAP](http://binaryanalysisplatform.github.io/) - suite of utilities and libraries that enable analysis of programs in their machine representations.
-* [BitBlaze](http://bitblaze.cs.berkeley.edu/)
-* [PANDA](https://github.com/panda-re/panda) - Platform for Architecture-Neutral Dynamic Analysis, built on QEMU system emulator, analyzecode in runtime.
-* [BARF](https://github.com/programa-stic/barf-project)
-* [S2E](https://s2e.systems/) - platform for in-vivo analysis of software systems.
-* [miasm](https://miasm.re/) - analyze / modify / generate binary program with python.
-* [soot](https://github.com/soot-oss/soot) - java optimization framework
-
-Symbolic Execution (only)
-
-* [KLEE](https://klee.github.io/) - dynamic symbolic execution engine built on top of the LLVM compiler infrastructure
-* [manticore](https://github.com/trailofbits/manticore/) - symbolic execution tool for analysis of smart contracts and binaries.
-* [Kite](http://www.cs.ubc.ca/labs/isd/Projects/Kite/) - conflict-driven symbolic execution tool (proof of concept)
-* [jCUTE](https://github.com/osl/jcute) - Java Concolic Unit Testing Engine, automatically generate unit tests for Java programs.
-* [ExpoSE](https://github.com/ExpoSEJS/ExpoSE) - dynamic symbolic execution engine for JavaScript.
-* [ESILSolve](https:/github.com/aemmitt-ns/esilsolve) - python symbolic execution framework using r2 and ESIL.
-
-Binary lifting
-
-* [McSema](https://github.com/lifting-bits/mcsema) - framework for lifting x86, amd64, and aarch64 program binareis to LLVM bitcode.
-
-Theorem prover and solver
-
-* [Z3](https://github.com/Z3Prover/z3) - cross-platform satisfiability modulo theory 
-* [STP](https://stp.github.io/)
-* [CVC4](https://cvc4.github.io/)
-* [Boolector](https://boolector.github.io/)
-
-## Code Emulators
-
-* [unicorn](https://github.com/unicorn-engine/unicorn)
-* [libemu](http://libemu.carnivore.it)
-* [pegasus](https://github.com/imugee/pegasus)
-* [galago](https://github.com/zboralski/galago) - ARM64 emulation for XXTEA key extraction from Cocos2d-x native libraries.
-
-## Injectors
-
-Windows
-
-* [PolyHook](https://github.com/stevemk14ebr/PolyHook)
-* [EasyHook](https://easyhook.github.io/)
-* [Deviare2](https://github.com/nektra/Deviare2)
-* [Xenos](https://github.com/DarthTon/Xenos)
-
-## HTTP Intercept Proxy
+### HTTP Intercept Proxy
 
 * [Fiddler](https://www.telerik.com/fiddler)
 * [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 * [Charles](https://www.charlesproxy.com/)
 
-## Reconstructors
+- - -
 
-Import reconstructor
+## Automation & Frameworks
 
-* [ImpRec](http://www.woodmann.com/collaborative/tools/index.php/ImpREC)
-* [Scylla](https://github.com/NtQuery/Scylla)
-* [LordPE](http://www.woodmann.com/collaborative/tools/images/Bin_LordPE_2010-6-29_3.9_LordPE_1.41_Deluxe_b.zip)
+### Binary Analysis Framework
 
-Data-type reconstructor
+* [Angr](http://angr.io/) - python framework for analyzing binaries, combines both static and dynamic symbolic (concolic) analysis.
+* [Triton](https://triton.quarkslab.com) - dynamic binary analysis (DBA) framework.
+* [BAP](http://binaryanalysisplatform.github.io/) - suite of utilities and libraries that enable analysis of programs in their machine representations.
+* [BitBlaze](http://bitblaze.cs.berkeley.edu/)
+* [PANDA](https://github.com/panda-re/panda) - Platform for Architecture-Neutral Dynamic Analysis, built on QEMU system emulator, analyze code in runtime.
+* [BARF](https://github.com/programa-stic/barf-project)
+* [S2E](https://s2e.systems/) - platform for in-vivo analysis of software systems.
+* [miasm](https://miasm.re/) - analyze / modify / generate binary program with python.
+* [soot](https://github.com/soot-oss/soot) - java optimization framework.
 
-* [ReClassEx](https://github.com/dude719/ReClassEx)
-* [ReClass.NET](https://github.com/KN4CK3R/ReClass.NET) - port of ReClass to .NET
+Symbolic Execution
 
-## Unpackers
+* [KLEE](https://klee.github.io/) - dynamic symbolic execution engine built on top of the LLVM compiler infrastructure.
+* [manticore](https://github.com/trailofbits/manticore/) - symbolic execution tool for analysis of smart contracts and binaries.
+* [Kite](http://www.cs.ubc.ca/labs/isd/Projects/Kite/) - conflict-driven symbolic execution tool (proof of concept).
+* [jCUTE](https://github.com/osl/jcute) - Java Concolic Unit Testing Engine, automatically generate unit tests for Java programs.
+* [ExpoSE](https://github.com/ExpoSEJS/ExpoSE) - dynamic symbolic execution engine for JavaScript.
+* [ESILSolve](https://github.com/aemmitt-ns/esilsolve) - python symbolic execution framework using r2 and ESIL.
 
-* [FUU](https://github.com/crackinglandia/fuu) - [F]aster [U]niversal [U]npacker
-* [TitanEngine](http://www.reversinglabs.com/products/TitanEngine.php)
+Binary Lifting
 
-## Obfuscators
+* [McSema](https://github.com/lifting-bits/mcsema) - framework for lifting x86, amd64, and aarch64 program binaries to LLVM bitcode.
+
+Theorem Provers & Solvers
+
+* [Z3](https://github.com/Z3Prover/z3) - cross-platform satisfiability modulo theory.
+* [STP](https://stp.github.io/)
+* [CVC4](https://cvc4.github.io/)
+* [Boolector](https://boolector.github.io/)
+
+- - -
+
+## Code Protection & Anti-Analysis
+
+### Obfuscators
 
 Native
 
@@ -525,25 +514,20 @@ AutoIt scripts
 * [Assembly Source Code Obfuscator](https://www.pelock.com/products/obfuscator)
 * [AutoIt Source Code Obfuscator](https://www.pelock.com/products/autoit-obfuscator)
 
-## Deobfuscators
+### Deobfuscators
 
 Native
 
 * [LLVM Deobfuscator](https://github.com/RPISEC/llvm-deobfuscator)
 * [SATURN]() - software deobfuscation framework based on LLVM.
 
-Python
+.NET
 
-* [bonedensity](https://github.com/nesrak1/bonedensity) - deobfuscator for PyArmor
-* [Hyperion-deobfuscator](https://github.com/xKiian/Hyperion-deobfuscator) - deobfuscator for Hyperion
+* [de4dot](https://github.com/0xd4d/de4dot)
 
 Java
 
 * [Java Deobfuscator](https://javadeobfuscator.com/)
-
-.NET
-
-* [de4dot](https://github.com/0xd4d/de4dot)
 
 Javascript
 
@@ -553,65 +537,108 @@ PHP
 
 * [evalhook](https://github.com/unreturned/evalhook)
 
+Python
+
+* [bonedensity](https://github.com/nesrak1/bonedensity) - deobfuscator for PyArmor.
+* [Hyperion-deobfuscator](https://github.com/xKiian/Hyperion-deobfuscator) - deobfuscator for Hyperion.
+
 String extraction
 
 * [FLOSS](https://github.com/fireeye/flare-floss)
 * [NoMoreXOR](https://github.com/hiddenillusion/NoMoreXOR)
 
-Android Specific
+Android
 
 * [ObfuDEScate](https://github.com/user1342/Obfu-DE-Scate)
 * [TinySmaliEmulator](https://github.com/amoulu/TinySmaliEmulator)
 * [simplify](https://github.com/CalebFenton/simplify)
 
-## Binary Visualization
+### Unpackers
 
-See also [Data & Format Reversing](_format.md).
+* [FUU](https://github.com/crackinglandia/fuu) - [F]aster [U]niversal [U]npacker.
+* [TitanEngine](http://www.reversinglabs.com/products/TitanEngine.php)
+
+### Reconstructors
+
+Import reconstructor
+
+* [ImpRec](http://www.woodmann.com/collaborative/tools/index.php/ImpREC)
+* [Scylla](https://github.com/NtQuery/Scylla)
+* [LordPE](http://www.woodmann.com/collaborative/tools/images/Bin_LordPE_2010-6-29_3.9_LordPE_1.41_Deluxe_b.zip)
+
+Data-type reconstructor
+
+* [ReClassEx](https://github.com/dude719/ReClassEx)
+* [ReClass.NET](https://github.com/KN4CK3R/ReClass.NET) - port of ReClass to .NET.
+
+### Dumpers
+
+Android DEX dumper
+
+* [eBPFDexDumper](https://github.com/LLeavesG/eBPFDexDumper) - dump DEX from memory using eBPF hooking on Android.
+* [eBPFDexDumper-rs](https://github.com/chinleez/eBPFDexDumper-rs) - alternative of dumping DEX from memory using eBPF (written in Rust).
+
+- - -
+
+## Visualization & Misc
+
+### Binary Visualization
+
+See also [Format Reverse Engineering](format-reversing.md).
 
 * [Veles](https://codisec.com/veles/)
 * [..cantor.dust..](https://sites.google.com/site/xxcantorxdustxx/home)
 * [binglide](https://github.com/wapiflapi/binglide)
 
-## Document Analysis
+### Document Analysis
+
+**Office Doc and Macro**
 
 * [Ole Tools](http://www.decalage.info/python/oletools)
+
+**PDF**
+
 * [Didier's PDF Tools](http://blog.didierstevens.com/programs/pdf-tools/)
 * [Origami](https://github.com/cogent/origami-pdf)
 
-## Misc
+### Misc
 
-* [bingrep](https://github.com/m4b/bingrep) - grep through binaries
+* [bingrep](https://github.com/m4b/bingrep) - grep through binaries.
 * [Assembly REPL](https://github.com/pirate/assembly-repl) - native raw assembly, LLVM IR, C, C++, and Objective-C REPLs for macOS and Linux.
 
-## MCP
+- - -
 
-MCP (Model Context Protocol) server for various tools
+## MCP Servers
 
-#### Disassembler
+MCP (Model Context Protocol) servers for integrating reversing tools with LLM workflows.
 
-* [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via Model Context Protocol (MCP), enables LLM-driven reversing workflows.
+### Disassemblers
+
+* [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via MCP, enables LLM-driven reversing workflows.
 * [GhidraMCP](https://github.com/LaurieWired/GhidraMCP)
 
-#### Debuggers
+### Debuggers
 
-- [LLDB](https://lldb.llvm.org/use/mcp.html) - ⭐ Official native MCP support as of June 2025, plus community implementations.
-- [GDB MCP Server](https://www.pulsemcp.com/servers/pansila-gdb) - Multiple implementations providing comprehensive debugging capabilities.
+* [LLDB](https://lldb.llvm.org/use/mcp.html) - official native MCP support as of June 2025, plus community implementations.
+* [GDB MCP Server](https://www.pulsemcp.com/servers/pansila-gdb) - multiple implementations providing comprehensive debugging capabilities.
 
-#### Dynamic Binary Instrumentations
+### Dynamic Binary Instrumentation
 
-- [frida-mcp](https://github.com/dnakov/frida-mcp) - MCP server for Frida with process management, script injection, and real-time instrumentation.
+* [frida-mcp](https://github.com/dnakov/frida-mcp) - MCP server for Frida with process management, script injection, and real-time instrumentation.
 
-#### Behavior Analysis
+### Behavior Analysis
 
 * [WireMCP](https://github.com/0xKoda/WireMCP) - Wireshark MCP server with threat detection capabilities.
 
-- - - 
+- - -
 
-## IDA Script
+## Tool Scripting & Plugins
 
-* [IDA Python Src](https://github.com/idapython/src) - source code for IDAPython plugin, enable python script running in IDA Pro .
+### IDA Pro Scripting
 
-references
+* [IDA Python Src](https://github.com/idapython/src) - source code for IDAPython plugin, enable python script running in IDA Pro.
+
+References
 
 * [IDC Functions Doc](https://www.hex-rays.com/products/ida/support/idadoc/162.shtml)
 * [Using IDAPython to Make your Life Easier](http://researchcenter.paloaltonetworks.com/tag/idapython/)
@@ -625,7 +652,7 @@ Script collection
 * [devttys0/ida](https://github.com/devttys0/ida) - collection of IDAPython plugins/scripts/modules.
 * [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list) - list of ida scripts (IDC / IDAPython), links to many repository.
 
-## Ghidra Script
+### Ghidra Scripting
 
 Script collection
 
