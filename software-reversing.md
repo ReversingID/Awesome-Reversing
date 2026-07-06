@@ -188,6 +188,7 @@ Multi/cross platform
 
 * [010 Editor](http://www.sweetscape.com/010editor/)
 * [wxHexEditor](https://www.wxhexeditor.org/)
+* [Hexana](https://hexana.lovable.app/?utm_source=awesome_re&utm_medium=referral&utm_campaign=landing_spread_q3) - IntelliJ and VS Code plugin for inspecting compiled artifacts: ELF/Mach-O/PE symbol tables, per-function Capstone disassembly, DWARF debug-info navigation, WebAssembly, Java class files, and Dex.
 
 Windows
 
@@ -332,6 +333,7 @@ Java bytecode editor
 
 * [WebAssembly Binary Toolkit (wabt)](https://github.com/webassembly/wabt) - official toolkit for disassemble and decompile WebAssembly.
 * [Re:Wasm](https://github.com/benediktwerner/rewasm)
+* [Hexana](https://hexana.lovable.app/?utm_source=awesome_re&utm_medium=referral&utm_campaign=landing_spread_q3) - IntelliJ and VS Code plugin for inspecting compiled artifacts: WebAssembly.
 
 - - -
 
@@ -629,6 +631,9 @@ MCP (Model Context Protocol) servers for integrating reversing tools with LLM wo
 ### Behavior Analysis
 
 * [WireMCP](https://github.com/0xKoda/WireMCP) - Wireshark MCP server with threat detection capabilities.
+
+### Analisys
+* [Hexana](https://hexana.lovable.app/?utm_source=awesome_re&utm_medium=referral&utm_campaign=landing_spread_q3) - MCP server for analisys: WebAssembly.
 
 - - -
 
