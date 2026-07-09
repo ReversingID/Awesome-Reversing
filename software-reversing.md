@@ -615,6 +615,7 @@ MCP (Model Context Protocol) servers for integrating reversing tools with LLM wo
 ### Disassemblers
 
 * [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via MCP, enables LLM-driven reversing workflows.
+* [idamesh](https://github.com/JordanRO2/idamesh) - MCP server for IDA Pro exposing the disassembler and Hex-Rays decompiler (decompile, cross-refs, call graphs, type/struct inspection, search, rename/comment/patch) over Streamable HTTP and stdio; a supervisor fronts multiple databases behind one endpoint.
 * [GhidraMCP](https://github.com/LaurieWired/GhidraMCP)
 
 ### Debuggers
