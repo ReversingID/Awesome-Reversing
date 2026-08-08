@@ -261,6 +261,7 @@ Java bytecode editor
 * [Capstone](http://www.capstone-engine.org/) - lightweight multi-platform, multi-architecture disassembly framework based on LLVM.
 * [distorm3](https://github.com/gdabah/distorm) - lightweight library for disassembling binary stream.
 * [zydis](https://github.com/zyantific/zydis) - fast and lightweight x86/x86-64 disassembler library.
+* [Reverser Space](https://reverser.space) - AI native collaborative reverse engineering in the browser built on Ghidra
 
 **Android / DEX**
 
