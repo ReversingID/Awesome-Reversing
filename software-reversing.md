@@ -469,6 +469,7 @@ Misc
 ### Binary Analysis Framework
 
 * [Angr](http://angr.io/) - python framework for analyzing binaries, combines both static and dynamic symbolic (concolic) analysis.
+* [fnprint](https://github.com/1rhino2/fnprint) - names functions in stripped ELF binaries and patch-diffs vuln vs patched builds by microexecuting each function, not by bytes or CFG.
 * [Triton](https://triton.quarkslab.com) - dynamic binary analysis (DBA) framework.
 * [BAP](http://binaryanalysisplatform.github.io/) - suite of utilities and libraries that enable analysis of programs in their machine representations.
 * [BitBlaze](http://bitblaze.cs.berkeley.edu/)
