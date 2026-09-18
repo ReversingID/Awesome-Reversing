@@ -508,6 +508,8 @@ Native
 
 * [Stunnix](http://stunnix.com/prod/cxxo/)
 * [M/o/Vfuscator](https://github.com/xoreaxeaxeax/movfuscator)
+* [Opaquer .NET Obfuscator](https://github.com/Rustemsoft/Opaquer) - A .NET obfuscation tool providing IL rewriting, symbol encryption, and anti-decompilation protection.
+
 
 AutoIt scripts
 
