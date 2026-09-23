@@ -317,6 +317,7 @@ EDA (Electronic Design Automation) and ECAD (Electronic Computer-Aided Design)
 ## Firmware Extract
 
 * [Binwalk](https://github.com/ReFirmLabs/binwalk)
+* [gv100-fecs-limiter](https://github.com/jajmangold/gv100-fecs-limiter) - Reverse-engineering the FECS speed-select limiter on NVIDIA CMP 100-210 (GV100) GPUs: VBIOS decode, BAR0 register probes, CUDA tensor-path benchmarks, leaked NVIDIA source analysis.
 
 ## Disassemblers & Decompilers
 
