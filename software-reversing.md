@@ -621,6 +621,7 @@ MCP (Model Context Protocol) servers for integrating reversing tools with LLM wo
 
 * [LLDB](https://lldb.llvm.org/use/mcp.html) - official native MCP support as of June 2025, plus community implementations.
 * [GDB MCP Server](https://www.pulsemcp.com/servers/pansila-gdb) - multiple implementations providing comprehensive debugging capabilities.
+* [PyMemoryEditor](https://github.com/JeanExtreme002/PyMemoryEditor) - read, write and scan the memory of running processes on Windows, Linux and macOS, with Cheat Engine-style value scans and pointer chains.
 
 ### Dynamic Binary Instrumentation
 
