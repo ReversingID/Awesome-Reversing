@@ -221,6 +221,7 @@ Executable explorer
 * [PPEE](https://www.mzrst.com/)
 * [PE Bear](https://hshrzd.wordpress.com/pe-bear/)
 * [MachoView](https://github.com/gdbinit/MachOView)
+* [DriverSentinel](https://grzesiekkedzior.github.io/DriverSentinel/) - Windows PE analysis tool with Capstone-based disassembly.
 
 Dependency check
 
