@@ -26,7 +26,7 @@ Database Reverse Engineering might used for schema recovery or remodelling.
 - [Relational Database](#relational-database)
     - [Database Administration Client](#database-administration-client)
     - [Code Generation](#code-generation)
-    - [Schema Modellers](#schema-modellers)
+    - [Schema Modeller](#schema-modeller)
     - [Schema Navigation & Visualization](#schema-navigation--visualization)
 - [Non-Relational Database](#non-relational-database)
 - [Flat-File Database](#flat-file-database)
@@ -173,7 +173,7 @@ There are many types of approaches of NoSQL, such as Column, Document, Graph, Ke
 
 ## Flat-File Database
 
-Database Reverse Engineering for Flat-File Database is based on [File Format Reverse Engineering](_format.md). It focus on files, indexes and keys to determine structure of record and relationships of tables.
+Database Reverse Engineering for Flat-File Database is based on [File Format Reverse Engineering](format-reversing.md). It focus on files, indexes and keys to determine structure of record and relationships of tables.
 
 In pre-DBMS era, each table is stored as a simple file. Access to data is actually I/O operations. The file can be a plain text file or a binary file. The database is a collection of files which contain structured data and cross-reference to each other.
 

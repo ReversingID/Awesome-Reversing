@@ -15,7 +15,7 @@ Most common usage of format reversing is reverse engineering the game assets, wh
 ## Table of Contents
 
 - Resources
-    - [Forums & Communities](#forums-communities)
+    - [Forums & Communities](#forums--communities)
     - [Articles](#articles)
     - [Tutorials](#tutorials)
     - [Practices](#practices)
@@ -27,7 +27,7 @@ Most common usage of format reversing is reverse engineering the game assets, wh
     - [Binary Visualization](#binary-visualization)
     - [String Search](#string-search)
     - [Pattern Search](#pattern-search)
-    - [Bundle Extractor](#bundle-extractor)
+    - [Extractor](#extractor)
 
 - - -
 
