@@ -616,6 +616,7 @@ MCP (Model Context Protocol) servers for integrating reversing tools with LLM wo
 
 * [ida-headless-mcp](https://github.com/zboralski/ida-headless-mcp) - headless IDA Pro binary analysis via MCP, enables LLM-driven reversing workflows.
 * [GhidraMCP](https://github.com/LaurieWired/GhidraMCP)
+* [REA](https://github.com/morluto/rea) - local CLI and MCP tools for agent-assisted binary analysis with source-linked evidence; deep native analysis uses separately installed Hopper, Ghidra, or IDA.
 
 ### Debuggers
 
