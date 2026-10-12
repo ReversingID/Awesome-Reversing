@@ -236,7 +236,11 @@ Format parser and modification
 
 ### Bytecode Editors
 
-Java bytecode editor
+**Hermes bytecode editor**
+
+* [Hermit](https://github.com/xV4L3x/hermit/) - interactive toolkit for inspecting, decompiling, and patching Hermes bytecode used by React Native applications.
+
+**Java bytecode editor**
 
 * [Recaf](https://github.com/Col-E/Recaf)
 * [JByteMode](https://github.com/GraxCode/JByteMod-Beta)
