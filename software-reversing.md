@@ -221,6 +221,7 @@ Executable explorer
 * [PPEE](https://www.mzrst.com/)
 * [PE Bear](https://hshrzd.wordpress.com/pe-bear/)
 * [MachoView](https://github.com/gdbinit/MachOView)
+* [hexvero](https://github.com/maximilianfeix/hexvero) - static first look at ELF, Mach-O, PE, APK and Electron archives without running them: imports, hardening, IPC channels and preload bridges with the file and line they were read from.
 
 Dependency check
 
