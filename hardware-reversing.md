@@ -365,6 +365,8 @@ Communication Protocol
     - Bluez - sdptool, l2ping
 * ZigBee
     - [KillerBee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
+* USB
+    - [usb-rea](https://github.com/emirmrkaljevic/usb-rea) - Infers vendor-specific USB device protocols from labelled usbmon/USBPcap captures and generates a pyusb driver and Wireshark dissector.
 
 Radio Frequency
 
