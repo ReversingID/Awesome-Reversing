@@ -103,6 +103,7 @@ Specific topic on Software Reverse Engineering
 * [Code of destruction – malware analysis](https://www.pelock.com/articles/code-of-destruction-malware-analysis)
 * [Polymorphic Encryption Algorithms](https://www.pelock.com/articles/polymorphic-encryption-algorithms)
 * [Reversing reading]() - coming soon.
+* [Reverse Engineering Anything](https://reverseengineeringanything.com/) - Independent REA learning guide covering installation, coding-client setup, CLI reference, and troubleshooting.
 
 ## Courses
 
