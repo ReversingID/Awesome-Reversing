@@ -221,6 +221,7 @@ Executable explorer
 * [PPEE](https://www.mzrst.com/)
 * [PE Bear](https://hshrzd.wordpress.com/pe-bear/)
 * [MachoView](https://github.com/gdbinit/MachOView)
+* [binkeep](https://kano92-dir.github.io/binkeep/) - browser-based PE, ELF and Mach-O explorer with disassembly, xrefs, strings and YARA; files never leave the machine.
 
 Dependency check
 
