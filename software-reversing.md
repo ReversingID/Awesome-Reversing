@@ -93,6 +93,7 @@ Specific topic on Software Reverse Engineering
 * [Behind Enemy Lines Reverse Engineering C++ in Modern Ages](https://corecppil.github.io/CoreCpp2019/Presentations/Gal_Behind_Enemy_Lines_Reverse_Engineering_Cpp_in_Modern_Ages.pdf)
 * [Overcoming Java Vulnerabilities](https://www2.gemalto.com/download/OvercomingJavaVulnerabilities_WP_(A4)_web.pdf)
 * [Reverse engineering tools review](https://www.pelock.com/articles/reverse-engineering-tools-review)
+* [PS5 14.22 Firmware Research](https://github.com/ccclosed/ps5-1422-research) - PS5 14.22 firmware research: 45 evidence reports, sysent cross-verification against a 13.60 kernel dump, and a 12-stage userland-to-kernel exploit chain (PC-only).
 
 ## Articles
 
