@@ -595,6 +595,7 @@ See also [Format Reverse Engineering](format-reversing.md).
 **Office Doc and Macro**
 
 * [Ole Tools](http://www.decalage.info/python/oletools)
+* [MaldocTrace](https://github.com/debugactiveprocess/MaldocTrace) - VBA/XLM macro emulator and p-code decompiler for Office, RTF and OneNote files, recovers the commands and IOCs a document would run.
 
 **PDF**
 
