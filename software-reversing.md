@@ -329,6 +329,7 @@ Java bytecode editor
 * [pyfalcon](https://github.com/Svenskithesource/pyfalcon) - cross-version Python disassembler written in Rust.
 * [pycdas](https://github.com/zrax/pycdc) - disassembler written in C++.
 * [nuitkadec](https://github.com/8zav3/nuitkadec) - universal static Nuitka decompiler and `.pyc` extractor for standalone/onefile PE, ELF, and Mach-O binaries (CPython 3.8-3.14, Nuitka 1.x-4.x).
+* [pyarmor-dump](https://github.com/8zav3/pyarmor-dump) - process-isolated runtime `.pyc` extractor and deterministic bytecode lifter for PyArmor 7, 8 RFT, and 9 scripts (Python 3.8-3.12).
 
 **WebAssembly (WASM)**
 
