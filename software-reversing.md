@@ -313,6 +313,7 @@ Java bytecode editor
 **JavaScript**
 
 * [spidermonkey-dumper](https://github.com/zboralski/spidermonkey-dumper) - decode and disassemble SpiderMonkey .jsc bytecode from Cocos2d-x games.
+* [jscdec](https://github.com/8zav3/jscdec) - pure-JS V8 Ignition bytecode decompiler for Bytenode and Electron `.jsc` snapshots (Electron 22-39, Node.js 20-22 x64) with ASAR/EXE unpacking.
 
 **Lua**
 
@@ -327,6 +328,8 @@ Java bytecode editor
 * [dis](https://docs.python.org/3/library/dis.html) - built-in python disassembler.
 * [pyfalcon](https://github.com/Svenskithesource/pyfalcon) - cross-version Python disassembler written in Rust.
 * [pycdas](https://github.com/zrax/pycdc) - disassembler written in C++.
+* [nuitkadec](https://github.com/8zav3/nuitkadec) - universal static Nuitka decompiler and `.pyc` extractor for standalone/onefile PE, ELF, and Mach-O binaries (CPython 3.8-3.14, Nuitka 1.x-4.x).
+* [pyarmor-dump](https://github.com/8zav3/pyarmor-dump) - process-isolated runtime `.pyc` extractor and deterministic bytecode lifter for PyArmor 7, 8 RFT, and 9 scripts (Python 3.8-3.12).
 
 **WebAssembly (WASM)**
 
